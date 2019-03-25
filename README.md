@@ -17,4 +17,5 @@ The +3V3 LDO needs heat-sinking, especially with long-range SFPs that have high 
 
 ## Links to other SFP-boards
 
-(insert links here)
+- https://osmocom.org/projects/misc-hardware/wiki/Sfp-experimenter
+- https://osmocom.org/projects/misc-hardware/wiki/Sfp-breakout
