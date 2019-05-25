@@ -1,10 +1,11 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+LIBS:sfp_v4-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
-Title "SFP-Board, 2017.03 - Power Supply"
+Title "SFP-Board, 2018.03 - Power Supply"
 Date "2017-03-10"
 Rev ""
 Comp "Anders Wallin (anders.e.e.wallin \"at\" gmail.com)"
@@ -14,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L awallin:LT1963A U201
+L sfp_v4-rescue:LT1963A-awallin U201
 U 1 1 58C3970B
 P 5200 1100
 F 0 "U201" H 5350 600 60  0000 C CNN
@@ -25,7 +26,7 @@ F 3 "" H 5200 1100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L awallin:LT3015 U203
+L sfp_v4-rescue:LT3015-awallin U203
 U 1 1 58C39761
 P 5200 4050
 F 0 "U203" H 5350 3550 60  0000 C CNN
@@ -36,7 +37,7 @@ F 3 "" H 5200 4050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L awallin:LT1963A U202
+L sfp_v4-rescue:LT1963A-awallin U202
 U 1 1 58C397CC
 P 5200 2300
 F 0 "U202" H 5350 1800 60  0000 C CNN
@@ -827,4 +828,8 @@ Wire Wire Line
 	5050 5150 4950 5150
 Wire Wire Line
 	4950 5150 4500 5150
+Text Notes 1050 3850 0    60   ~ 0
+D201 and D202 - reverse polarity protection.\ne.g. Farnell 9555986\nMBRA140T3G -  Schottky Rectifier, 40 V, 1 A, Single, DO-214AC,\nor similar
+Text Notes 650  1950 0    60   ~ 0
++/- 9 V or more\nDC supply\n\ncheck 3V3 regulator temperature if using +12VDC!
 $EndSCHEMATC
