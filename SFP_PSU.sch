@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:sfp_v4-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,39 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L sfp_v4-rescue:LT1963A-awallin U201
-U 1 1 58C3970B
-P 5200 1100
-F 0 "U201" H 5350 600 60  0000 C CNN
-F 1 "LT1963A" H 5200 1000 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:TO-263-5Lead" H 5200 1100 60  0001 C CNN
-F 3 "" H 5200 1100 60  0001 C CNN
-	1    5200 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L sfp_v4-rescue:LT3015-awallin U203
-U 1 1 58C39761
-P 5200 4050
-F 0 "U203" H 5350 3550 60  0000 C CNN
-F 1 "LT3015" H 5200 3950 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:TO-263-5Lead" H 5200 4050 60  0001 C CNN
-F 3 "" H 5200 4050 60  0001 C CNN
-	1    5200 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L sfp_v4-rescue:LT1963A-awallin U202
-U 1 1 58C397CC
-P 5200 2300
-F 0 "U202" H 5350 1800 60  0000 C CNN
-F 1 "LT1963A" H 5200 2150 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:TO-263-5Lead" H 5200 2300 60  0001 C CNN
-F 3 "" H 5200 2300 60  0001 C CNN
-	1    5200 2300
-	1    0    0    -1  
-$EndComp
 Text GLabel 6700 1350 2    60   Input ~ 0
 +6V
 Text GLabel 7050 2550 2    60   Input ~ 0
@@ -76,39 +42,6 @@ F 3 "" H 6300 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L sfp_v4-rescue:R R205
-U 1 1 58C398CF
-P 6400 2750
-F 0 "R205" V 6480 2750 50  0000 C CNN
-F 1 "470R" V 6400 2750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6330 2750 50  0001 C CNN
-F 3 "" H 6400 2750 50  0001 C CNN
-	1    6400 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L sfp_v4-rescue:R R206
-U 1 1 58C39911
-P 6400 3200
-F 0 "R206" V 6480 3200 50  0000 C CNN
-F 1 "270R" V 6400 3200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6330 3200 50  0001 C CNN
-F 3 "" H 6400 3200 50  0001 C CNN
-	1    6400 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR041
-U 1 1 58C39987
-P 6400 3450
-F 0 "#PWR041" H 6400 3200 50  0001 C CNN
-F 1 "GND" H 6400 3300 50  0000 C CNN
-F 2 "" H 6400 3450 50  0001 C CNN
-F 3 "" H 6400 3450 50  0001 C CNN
-	1    6400 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L sfp_v4-rescue:C C208
 U 1 1 58C399A9
 P 6800 2800
@@ -122,39 +55,29 @@ F 3 "" H 6800 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR042
+L sfp_v4-rescue:GND-power #PWR042
 U 1 1 58C399DC
-P 5200 3450
-F 0 "#PWR042" H 5200 3200 50  0001 C CNN
-F 1 "GND" H 5200 3300 50  0000 C CNN
-F 2 "" H 5200 3450 50  0001 C CNN
-F 3 "" H 5200 3450 50  0001 C CNN
-	1    5200 3450
+P 5300 3050
+AR Path="/58C399DC" Ref="#PWR042"  Part="1" 
+AR Path="/58C39691/58C399DC" Ref="#PWR042"  Part="1" 
+F 0 "#PWR042" H 5300 2800 50  0001 C CNN
+F 1 "GND" H 5300 2900 50  0000 C CNN
+F 2 "" H 5300 3050 50  0001 C CNN
+F 3 "" H 5300 3050 50  0001 C CNN
+	1    5300 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 3450 5200 3400
-Wire Wire Line
-	5700 2550 6400 2550
-Wire Wire Line
-	6400 2550 6400 2600
-Connection ~ 6400 2550
+	5300 3050 5300 3000
 Connection ~ 6800 2550
 Wire Wire Line
-	6400 2900 6400 3000
-Wire Wire Line
-	6400 3350 6400 3450
-Wire Wire Line
 	5700 2650 6150 2650
-Wire Wire Line
-	6150 2650 6150 3000
-Wire Wire Line
-	6150 3000 6400 3000
-Connection ~ 6400 3000
 $Comp
-L power:GND #PWR043
+L sfp_v4-rescue:GND-power #PWR043
 U 1 1 58C39A6A
 P 6800 3050
+AR Path="/58C39A6A" Ref="#PWR043"  Part="1" 
+AR Path="/58C39691/58C39A6A" Ref="#PWR043"  Part="1" 
 F 0 "#PWR043" H 6800 2800 50  0001 C CNN
 F 1 "GND" H 6800 2900 50  0000 C CNN
 F 2 "" H 6800 3050 50  0001 C CNN
@@ -164,21 +87,6 @@ F 3 "" H 6800 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6800 3050 6800 2950
-$Comp
-L power:GND #PWR044
-U 1 1 58C39AA4
-P 4650 2800
-F 0 "#PWR044" H 4650 2550 50  0001 C CNN
-F 1 "GND" H 4650 2650 50  0000 C CNN
-F 2 "" H 4650 2800 50  0001 C CNN
-F 3 "" H 4650 2800 50  0001 C CNN
-	1    4650 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 2750 4650 2750
-Wire Wire Line
-	4650 2750 4650 2800
 $Comp
 L sfp_v4-rescue:C C205
 U 1 1 58C39ADF
@@ -193,8 +101,6 @@ F 3 "" H 4350 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 2650 4600 2650
-Wire Wire Line
 	4600 2650 4600 2550
 Wire Wire Line
 	4150 2550 4350 2550
@@ -202,9 +108,11 @@ Wire Wire Line
 	4350 2600 4350 2550
 Connection ~ 4600 2550
 $Comp
-L power:GND #PWR045
+L sfp_v4-rescue:GND-power #PWR045
 U 1 1 58C39B57
 P 4350 3000
+AR Path="/58C39B57" Ref="#PWR045"  Part="1" 
+AR Path="/58C39691/58C39B57" Ref="#PWR045"  Part="1" 
 F 0 "#PWR045" H 4350 2750 50  0001 C CNN
 F 1 "GND" H 4350 2850 50  0000 C CNN
 F 2 "" H 4350 3000 50  0001 C CNN
@@ -215,18 +123,18 @@ $EndComp
 Wire Wire Line
 	4350 3000 4350 2900
 $Comp
-L power:GND #PWR046
+L sfp_v4-rescue:GND-power #PWR046
 U 1 1 58C39C2D
-P 5250 2200
-F 0 "#PWR046" H 5250 1950 50  0001 C CNN
-F 1 "GND" H 5250 2050 50  0000 C CNN
-F 2 "" H 5250 2200 50  0001 C CNN
-F 3 "" H 5250 2200 50  0001 C CNN
-	1    5250 2200
+P 5150 1850
+AR Path="/58C39C2D" Ref="#PWR046"  Part="1" 
+AR Path="/58C39691/58C39C2D" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 5150 1600 50  0001 C CNN
+F 1 "GND" H 5150 1700 50  0000 C CNN
+F 2 "" H 5150 1850 50  0001 C CNN
+F 3 "" H 5150 1850 50  0001 C CNN
+	1    5150 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5200 2200 5200 2150
 $Comp
 L sfp_v4-rescue:R R201
 U 1 1 58C39D56
@@ -265,15 +173,11 @@ $EndComp
 Wire Wire Line
 	6800 2550 6800 2650
 Wire Wire Line
-	5700 1350 6050 1350
-Wire Wire Line
 	6350 1350 6350 1400
 Wire Wire Line
 	6050 1400 6050 1350
 Connection ~ 6350 1350
 Connection ~ 6050 1350
-Wire Wire Line
-	5700 1450 5900 1450
 Wire Wire Line
 	5900 1450 5900 1750
 Wire Wire Line
@@ -282,9 +186,11 @@ Wire Wire Line
 	6050 1700 6050 1750
 Connection ~ 6050 1750
 $Comp
-L power:GND #PWR047
+L sfp_v4-rescue:GND-power #PWR047
 U 1 1 58C3A104
 P 6350 1800
+AR Path="/58C3A104" Ref="#PWR047"  Part="1" 
+AR Path="/58C39691/58C3A104" Ref="#PWR047"  Part="1" 
 F 0 "#PWR047" H 6350 1550 50  0001 C CNN
 F 1 "GND" H 6350 1650 50  0000 C CNN
 F 2 "" H 6350 1800 50  0001 C CNN
@@ -293,9 +199,11 @@ F 3 "" H 6350 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR048
+L sfp_v4-rescue:GND-power #PWR048
 U 1 1 58C3A1DB
 P 6050 2150
+AR Path="/58C3A1DB" Ref="#PWR048"  Part="1" 
+AR Path="/58C39691/58C3A1DB" Ref="#PWR048"  Part="1" 
 F 0 "#PWR048" H 6050 1900 50  0001 C CNN
 F 1 "GND" H 6050 2000 50  0000 C CNN
 F 2 "" H 6050 2150 50  0001 C CNN
@@ -307,21 +215,6 @@ Wire Wire Line
 	6050 2150 6050 2100
 Wire Wire Line
 	6350 1800 6350 1700
-$Comp
-L power:GND #PWR049
-U 1 1 58C3A30F
-P 4650 1600
-F 0 "#PWR049" H 4650 1350 50  0001 C CNN
-F 1 "GND" H 4650 1450 50  0000 C CNN
-F 2 "" H 4650 1600 50  0001 C CNN
-F 3 "" H 4650 1600 50  0001 C CNN
-	1    4650 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 1550 4650 1550
-Wire Wire Line
-	4650 1550 4650 1600
 $Comp
 L sfp_v4-rescue:C C204
 U 1 1 58C3A36E
@@ -336,9 +229,11 @@ F 3 "" H 4350 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR050
+L sfp_v4-rescue:GND-power #PWR050
 U 1 1 58C3A3BB
 P 4350 1750
+AR Path="/58C3A3BB" Ref="#PWR050"  Part="1" 
+AR Path="/58C39691/58C3A3BB" Ref="#PWR050"  Part="1" 
 F 0 "#PWR050" H 4350 1500 50  0001 C CNN
 F 1 "GND" H 4350 1600 50  0000 C CNN
 F 2 "" H 4350 1750 50  0001 C CNN
@@ -384,9 +279,11 @@ F 3 "" H 6800 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR051
+L sfp_v4-rescue:GND-power #PWR051
 U 1 1 58C3A651
 P 6300 5250
+AR Path="/58C3A651" Ref="#PWR051"  Part="1" 
+AR Path="/58C39691/58C3A651" Ref="#PWR051"  Part="1" 
 F 0 "#PWR051" H 6300 5000 50  0001 C CNN
 F 1 "GND" H 6300 5100 50  0000 C CNN
 F 2 "" H 6300 5250 50  0001 C CNN
@@ -402,14 +299,10 @@ Wire Wire Line
 	6300 4800 6050 4800
 Wire Wire Line
 	5800 4800 5800 4400
-Wire Wire Line
-	5800 4400 5700 4400
 Connection ~ 6300 4800
 Wire Wire Line
 	6050 4700 6050 4800
 Connection ~ 6050 4800
-Wire Wire Line
-	5700 4300 6050 4300
 Wire Wire Line
 	6800 4300 6800 4400
 Wire Wire Line
@@ -419,9 +312,11 @@ Wire Wire Line
 	6050 4400 6050 4300
 Connection ~ 6050 4300
 $Comp
-L power:GND #PWR052
+L sfp_v4-rescue:GND-power #PWR052
 U 1 1 58C3A8F7
 P 6800 4800
+AR Path="/58C3A8F7" Ref="#PWR052"  Part="1" 
+AR Path="/58C39691/58C3A8F7" Ref="#PWR052"  Part="1" 
 F 0 "#PWR052" H 6800 4550 50  0001 C CNN
 F 1 "GND" H 6800 4650 50  0000 C CNN
 F 2 "" H 6800 4800 50  0001 C CNN
@@ -433,20 +328,18 @@ Wire Wire Line
 	6800 4800 6800 4700
 Connection ~ 6800 4300
 $Comp
-L power:GND #PWR053
+L sfp_v4-rescue:GND-power #PWR053
 U 1 1 58C3AD66
-P 4650 4550
-F 0 "#PWR053" H 4650 4300 50  0001 C CNN
-F 1 "GND" H 4650 4400 50  0000 C CNN
-F 2 "" H 4650 4550 50  0001 C CNN
-F 3 "" H 4650 4550 50  0001 C CNN
-	1    4650 4550
+P 5150 4750
+AR Path="/58C3AD66" Ref="#PWR053"  Part="1" 
+AR Path="/58C39691/58C3AD66" Ref="#PWR053"  Part="1" 
+F 0 "#PWR053" H 5150 4500 50  0001 C CNN
+F 1 "GND" H 5150 4600 50  0000 C CNN
+F 2 "" H 5150 4750 50  0001 C CNN
+F 3 "" H 5150 4750 50  0001 C CNN
+	1    5150 4750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4750 4500 4650 4500
-Wire Wire Line
-	4650 4500 4650 4550
 $Comp
 L sfp_v4-rescue:C C203
 U 1 1 58C3ADE9
@@ -469,11 +362,6 @@ Wire Wire Line
 Wire Wire Line
 	4500 4300 4500 4400
 Connection ~ 4500 4300
-Wire Wire Line
-	5200 5100 5200 5150
-Wire Wire Line
-	5200 5150 5050 5150
-Connection ~ 4500 4400
 $Comp
 L sfp_v4-rescue:D D201
 U 1 1 58C3B337
@@ -488,9 +376,11 @@ $EndComp
 Text GLabel 3650 1300 0    60   Input ~ 0
 +VIN
 $Comp
-L power:GND #PWR054
+L sfp_v4-rescue:GND-power #PWR054
 U 1 1 58C3BBB4
 P 2000 2850
+AR Path="/58C3BBB4" Ref="#PWR054"  Part="1" 
+AR Path="/58C39691/58C3BBB4" Ref="#PWR054"  Part="1" 
 F 0 "#PWR054" H 2000 2600 50  0001 C CNN
 F 1 "GND" H 2000 2700 50  0000 C CNN
 F 2 "" H 2000 2850 50  0001 C CNN
@@ -517,9 +407,11 @@ $EndComp
 Wire Wire Line
 	4250 4750 4250 4650
 $Comp
-L power:GND #PWR055
+L sfp_v4-rescue:GND-power #PWR055
 U 1 1 58C3CB5B
 P 4250 4750
+AR Path="/58C3CB5B" Ref="#PWR055"  Part="1" 
+AR Path="/58C39691/58C3CB5B" Ref="#PWR055"  Part="1" 
 F 0 "#PWR055" H 4250 4500 50  0001 C CNN
 F 1 "GND" H 4250 4600 50  0000 C CNN
 F 2 "" H 4250 4750 50  0001 C CNN
@@ -626,9 +518,11 @@ F 3 "" H 6900 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR056
+L sfp_v4-rescue:GND-power #PWR056
 U 1 1 58C3DDD3
 P 6750 2250
+AR Path="/58C3DDD3" Ref="#PWR056"  Part="1" 
+AR Path="/58C39691/58C3DDD3" Ref="#PWR056"  Part="1" 
 F 0 "#PWR056" H 6750 2000 50  0001 C CNN
 F 1 "GND" H 6750 2100 50  0000 C CNN
 F 2 "" H 6750 2250 50  0001 C CNN
@@ -637,9 +531,11 @@ F 3 "" H 6750 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR057
+L sfp_v4-rescue:GND-power #PWR057
 U 1 1 58C3DE3B
 P 7150 3550
+AR Path="/58C3DE3B" Ref="#PWR057"  Part="1" 
+AR Path="/58C39691/58C3DE3B" Ref="#PWR057"  Part="1" 
 F 0 "#PWR057" H 7150 3300 50  0001 C CNN
 F 1 "GND" H 7150 3400 50  0000 C CNN
 F 2 "" H 7150 3550 50  0001 C CNN
@@ -648,9 +544,11 @@ F 3 "" H 7150 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR058
+L sfp_v4-rescue:GND-power #PWR058
 U 1 1 58C3DEA3
 P 6750 3450
+AR Path="/58C3DEA3" Ref="#PWR058"  Part="1" 
+AR Path="/58C39691/58C3DEA3" Ref="#PWR058"  Part="1" 
 F 0 "#PWR058" H 6750 3200 50  0001 C CNN
 F 1 "GND" H 6750 3300 50  0000 C CNN
 F 2 "" H 6750 3450 50  0001 C CNN
@@ -691,9 +589,9 @@ Wire Wire Line
 	6750 1900 6750 1850
 Wire Wire Line
 	6750 2250 6750 2200
-Text Notes 5000 4100 0    60   ~ 0
+Text Notes 4600 4050 0    60   ~ 0
 2068045 
-Text Notes 5000 1100 0    60   ~ 0
+Text Notes 4900 1000 0    60   ~ 0
 1273625
 Text Notes 7050 1750 0    60   ~ 0
 2463991 \n1.9V 2mA
@@ -701,8 +599,6 @@ Text Notes 950  2450 0    60   ~ 0
 277-1264-ND 
 Text Notes 7700 3050 0    60   ~ 0
 Vout= 1.21V(1+R2/R1) + 3uA * R2
-Text Notes 7200 6800 0    60   ~ 0
-2018-03 removed filters from DC-input
 Text GLabel 3600 4300 0    60   Input ~ 0
 -VIN
 Wire Wire Line
@@ -711,75 +607,13 @@ Wire Wire Line
 	3700 1300 3650 1300
 Text Notes 7450 2650 0    60   ~ 0
 Use thick traces for SFP supply!!\nhigh currents here.
-$Comp
-L sfp_v4-rescue:Conn_01x02 J204
-U 1 1 5AA27C8C
-P 5050 5650
-F 0 "J204" H 5050 5800 50  0000 C CNN
-F 1 "HEATSINK" V 5150 5650 50  0000 C CNN
-F 2 "awallinKiCadFootprints_git:Heatsink_Fisher_TO263" H 5050 5650 50  0001 C CNN
-F 3 "" H 5050 5650 50  0001 C CNN
-	1    5050 5650
-	0    1    1    0   
-$EndComp
-$Comp
-L sfp_v4-rescue:Conn_01x02 J203
-U 1 1 5AA27DC2
-P 4850 3650
-F 0 "J203" H 4850 3800 50  0000 C CNN
-F 1 "HEATSINK" V 4950 3650 50  0000 C CNN
-F 2 "awallinKiCadFootprints_git:Heatsink_Fisher_TO263" H 4850 3650 50  0001 C CNN
-F 3 "" H 4850 3650 50  0001 C CNN
-	1    4850 3650
-	0    1    1    0   
-$EndComp
-$Comp
-L sfp_v4-rescue:Conn_01x02 J202
-U 1 1 5AA27F99
-P 4650 2350
-F 0 "J202" H 4650 2500 50  0000 C CNN
-F 1 "HEATSINK" V 4750 2350 50  0000 C CNN
-F 2 "awallinKiCadFootprints_git:Heatsink_Fisher_TO263" H 4650 2350 50  0001 C CNN
-F 3 "" H 4650 2350 50  0001 C CNN
-	1    4650 2350
-	0    1    1    0   
-$EndComp
+Connection ~ 5300 3000
 Wire Wire Line
-	4750 3400 4850 3400
-Wire Wire Line
-	4850 3400 4850 3450
-Connection ~ 5200 3400
-Wire Wire Line
-	4750 3400 4750 3450
-Connection ~ 4850 3400
-Wire Wire Line
-	4850 2200 5200 2200
-Wire Wire Line
-	4850 2100 4850 2200
-Wire Wire Line
-	4550 2100 4650 2100
-Wire Wire Line
-	4650 2100 4650 2150
-Connection ~ 5200 2200
-Wire Wire Line
-	4550 2100 4550 2150
-Connection ~ 4650 2100
-Wire Wire Line
-	5050 5450 5050 5150
-Connection ~ 5050 5150
-Wire Wire Line
-	4950 5450 4950 5150
-Connection ~ 4950 5150
+	4850 3000 4850 3050
 Wire Wire Line
 	2000 2800 2000 2850
 Wire Wire Line
-	6400 2550 6800 2550
-Wire Wire Line
 	6800 2550 6950 2550
-Wire Wire Line
-	6400 3000 6400 3050
-Wire Wire Line
-	4600 2550 4750 2550
 Wire Wire Line
 	6350 1350 6550 1350
 Wire Wire Line
@@ -801,8 +635,6 @@ Wire Wire Line
 Wire Wire Line
 	4500 4300 4750 4300
 Wire Wire Line
-	4500 4400 4500 5150
-Wire Wire Line
 	4350 1350 4600 1350
 Wire Wire Line
 	4250 4300 4500 4300
@@ -817,19 +649,110 @@ Wire Wire Line
 Wire Wire Line
 	6550 1350 6700 1350
 Wire Wire Line
-	5200 3400 5200 3350
-Wire Wire Line
-	4850 3400 5200 3400
-Wire Wire Line
-	5200 2200 5250 2200
-Wire Wire Line
-	4650 2100 4850 2100
-Wire Wire Line
-	5050 5150 4950 5150
-Wire Wire Line
-	4950 5150 4500 5150
+	5300 3000 5300 2950
 Text Notes 1050 3850 0    60   ~ 0
 D201 and D202 - reverse polarity protection.\ne.g. Farnell 9555986\nMBRA140T3G -  Schottky Rectifier, 40 V, 1 A, Single, DO-214AC,\nor similar
 Text Notes 650  1950 0    60   ~ 0
 +/- 9 V or more\nDC supply\n\ncheck 3V3 regulator temperature if using +12VDC!
+$Comp
+L Regulator_Linear:LT1963AxQ-3.3 U203
+U 1 1 5F92F725
+P 5300 2650
+F 0 "U203" H 5700 2900 50  0000 C CNN
+F 1 "LT1963AxQ-3.3" H 5300 2926 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 5300 2200 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1963aff.pdf" H 5300 2100 50  0001 C CNN
+	1    5300 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2550 6150 2550
+Wire Wire Line
+	6150 2650 6150 2550
+Connection ~ 6150 2550
+Wire Wire Line
+	6150 2550 6800 2550
+Wire Wire Line
+	4600 2550 4900 2550
+Wire Wire Line
+	4600 2650 4900 2650
+$Comp
+L Regulator_Linear:LT1963AEQ U201
+U 1 1 5F94B6A7
+P 5150 1450
+F 0 "U201" H 5150 1817 50  0000 C CNN
+F 1 "LT1963AEQ" H 5150 1726 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 5150 1000 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1963aff.pdf" H 5150 900 50  0001 C CNN
+	1    5150 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1750 5150 1800
+Wire Wire Line
+	5550 1450 5900 1450
+Wire Wire Line
+	5550 1350 6050 1350
+$Comp
+L Regulator_Linear:LT3015Q U202
+U 1 1 5F962074
+P 5150 4400
+F 0 "U202" H 5150 4767 50  0000 C CNN
+F 1 "LT3015Q" H 5150 4676 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 5150 4050 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3015fb.pdf" H 5150 4400 50  0001 C CNN
+	1    5150 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4700 5150 4750
+Wire Wire Line
+	5550 4400 5800 4400
+Wire Wire Line
+	5550 4300 6050 4300
+$Comp
+L Mechanical:Heatsink_Pad HS201
+U 1 1 5F974E29
+P 4500 4700
+F 0 "HS201" H 4600 4950 50  0000 R CNN
+F 1 "Heatsink_Pad" H 4600 4850 50  0000 R CNN
+F 2 "Heatsink:Heatsink_Fischer_FK24413D2PAK_26x13mm" H 4512 4650 50  0001 C CNN
+F 3 "~" H 4512 4650 50  0001 C CNN
+	1    4500 4700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4500 4600 4500 4400
+Connection ~ 4500 4400
+Wire Wire Line
+	4850 3000 5300 3000
+$Comp
+L Mechanical:Heatsink_Pad HS203
+U 1 1 5F987ED5
+P 4850 3150
+F 0 "HS203" H 4950 3400 50  0000 R CNN
+F 1 "Heatsink_Pad" H 4950 3300 50  0000 R CNN
+F 2 "Heatsink:Heatsink_Fischer_FK24413D2PAK_26x13mm" H 4862 3100 50  0001 C CNN
+F 3 "~" H 4862 3100 50  0001 C CNN
+	1    4850 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:Heatsink_Pad HS202
+U 1 1 5F989942
+P 4700 1950
+F 0 "HS202" H 4800 2200 50  0000 R CNN
+F 1 "Heatsink_Pad" H 4800 2100 50  0000 R CNN
+F 2 "Heatsink:Heatsink_Fischer_FK24413D2PAK_26x13mm" H 4712 1900 50  0001 C CNN
+F 3 "~" H 4712 1900 50  0001 C CNN
+	1    4700 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4700 1850 4700 1800
+Wire Wire Line
+	4700 1800 5150 1800
+Connection ~ 5150 1800
+Wire Wire Line
+	5150 1800 5150 1850
 $EndSCHEMATC

@@ -1,21 +1,20 @@
 EESchema Schematic File Version 4
-LIBS:sfp_v4-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
-Title "SFP-Board - rev4 - 2018.03"
-Date "2017-03-15"
+Title "SFP-Board - rev5 - 2020-10"
+Date "2020-10"
 Rev ""
 Comp "Anders Wallin (anders.e.e.wallin \"at\" gmail.com)"
 Comment1 "2018-03 LMH6702, symmetric circuit, thicker DC-traces"
-Comment2 ""
+Comment2 "2020-10: add status LEDs"
 Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:GND #PWR01
+L sfp_v4-rescue:GND-power #PWR01
 U 1 1 561BA000
 P 7600 2100
 F 0 "#PWR01" H 7600 1850 50  0001 C CNN
@@ -50,7 +49,7 @@ F 3 "" H 6850 1800 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR02
+L sfp_v4-rescue:GND-power #PWR02
 U 1 1 561BD056
 P 1750 6850
 F 0 "#PWR02" H 1750 6600 50  0001 C CNN
@@ -90,7 +89,7 @@ F 3 "" H 1350 5800 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR03
+L sfp_v4-rescue:GND-power #PWR03
 U 1 1 5620A58C
 P 1250 7000
 F 0 "#PWR03" H 1250 6750 50  0001 C CNN
@@ -118,7 +117,7 @@ F 3 "" H 2800 5600 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR04
+L sfp_v4-rescue:GND-power #PWR04
 U 1 1 56C22E7C
 P 2800 5800
 F 0 "#PWR04" H 2800 5550 50  0001 C CNN
@@ -142,40 +141,7 @@ F 3 "" H 9100 850 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L sfp_v4-rescue:Conn_01x01 P104
-U 1 1 56C1DC63
-P 9600 850
-F 0 "P104" H 9600 950 50  0000 C CNN
-F 1 "CONN_01X01" V 9700 850 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3mm" H 9600 850 50  0001 C CNN
-F 3 "" H 9600 850 50  0000 C CNN
-	1    9600 850 
-	0    1    1    0   
-$EndComp
-$Comp
-L sfp_v4-rescue:Conn_01x01 P105
-U 1 1 56C1DD00
-P 10100 850
-F 0 "P105" H 10100 950 50  0000 C CNN
-F 1 "CONN_01X01" V 10200 850 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3mm" H 10100 850 50  0001 C CNN
-F 3 "" H 10100 850 50  0000 C CNN
-	1    10100 850 
-	0    1    1    0   
-$EndComp
-$Comp
-L sfp_v4-rescue:Conn_01x01 P106
-U 1 1 56C1DDB4
-P 10600 850
-F 0 "P106" H 10600 950 50  0000 C CNN
-F 1 "CONN_01X01" V 10700 850 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3mm" H 10600 850 50  0001 C CNN
-F 3 "" H 10600 850 50  0000 C CNN
-	1    10600 850 
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR05
+L sfp_v4-rescue:GND-power #PWR05
 U 1 1 56C1E0ED
 P 10950 700
 F 0 "#PWR05" H 10950 450 50  0001 C CNN
@@ -217,7 +183,7 @@ U 1 1 58C2D783
 P 7600 1800
 F 0 "J102" H 7400 1900 50  0000 C CNN
 F 1 "SMA" H 7800 1800 50  0000 C CNN
-F 2 "awallinKiCadFootprints:CONNECTOR_SMA_Straight" H 7600 1800 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-2200_Horizontal" H 7600 1800 50  0001 C CNN
 F 3 "" H 7600 1800 50  0001 C CNN
 	1    7600 1800
 	1    0    0    -1  
@@ -228,13 +194,13 @@ U 1 1 58C2D828
 P 10000 5550
 F 0 "J104" H 10010 5670 50  0000 C CNN
 F 1 "SMA" H 10150 5550 50  0000 C CNN
-F 2 "awallinKiCadFootprints:CONNECTOR_SMA_Straight" H 10000 5550 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-2200_Horizontal" H 10000 5550 50  0001 C CNN
 F 3 "" H 10000 5550 50  0001 C CNN
 	1    10000 5550
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR06
+L sfp_v4-rescue:GND-power #PWR06
 U 1 1 58C30213
 P 2650 1850
 F 0 "#PWR06" H 2650 1600 50  0001 C CNN
@@ -245,7 +211,7 @@ F 3 "" H 2650 1850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR07
+L sfp_v4-rescue:GND-power #PWR07
 U 1 1 58C34C82
 P 3050 5800
 F 0 "#PWR07" H 3050 5550 50  0001 C CNN
@@ -295,7 +261,7 @@ F 3 "" H 7600 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR08
+L sfp_v4-rescue:GND-power #PWR08
 U 1 1 58C38887
 P 7600 1500
 F 0 "#PWR08" H 7600 1250 50  0001 C CNN
@@ -319,7 +285,7 @@ F 3 "" H 10000 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR09
+L sfp_v4-rescue:GND-power #PWR09
 U 1 1 58C3A1EF
 P 10000 5850
 F 0 "#PWR09" H 10000 5600 50  0001 C CNN
@@ -330,7 +296,7 @@ F 3 "" H 10000 5850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR010
+L sfp_v4-rescue:GND-power #PWR010
 U 1 1 58C3A27E
 P 10000 5200
 F 0 "#PWR010" H 10000 4950 50  0001 C CNN
@@ -409,7 +375,7 @@ F 3 "" H 3250 5600 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR011
+L sfp_v4-rescue:GND-power #PWR011
 U 1 1 58C309BF
 P 3250 5800
 F 0 "#PWR011" H 3250 5550 50  0001 C CNN
@@ -510,7 +476,7 @@ F 3 "" H 6500 1250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR012
+L sfp_v4-rescue:GND-power #PWR012
 U 1 1 58C35764
 P 5750 2750
 F 0 "#PWR012" H 5750 2500 50  0001 C CNN
@@ -521,7 +487,7 @@ F 3 "" H 5750 2750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR013
+L sfp_v4-rescue:GND-power #PWR013
 U 1 1 58C35826
 P 6200 2750
 F 0 "#PWR013" H 6200 2500 50  0001 C CNN
@@ -543,7 +509,7 @@ F 3 "" H 6400 1800 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR014
+L sfp_v4-rescue:GND-power #PWR014
 U 1 1 58C36A0B
 P 5750 750
 F 0 "#PWR014" H 5750 500 50  0001 C CNN
@@ -554,7 +520,7 @@ F 3 "" H 5750 750 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR015
+L sfp_v4-rescue:GND-power #PWR015
 U 1 1 58C36AD0
 P 6250 750
 F 0 "#PWR015" H 6250 500 50  0001 C CNN
@@ -569,7 +535,7 @@ Text GLabel 6750 1250 2    60   Input ~ 0
 Text GLabel 6750 2300 2    60   Input ~ 0
 -6V
 $Comp
-L power:GND #PWR016
+L sfp_v4-rescue:GND-power #PWR016
 U 1 1 58C37716
 P 5400 1150
 F 0 "#PWR016" H 5400 900 50  0001 C CNN
@@ -586,7 +552,7 @@ F0 "Sheet58C39690" 60
 F1 "SFP_PSU.sch" 60
 $EndSheet
 $Comp
-L power:GND #PWR017
+L sfp_v4-rescue:GND-power #PWR017
 U 1 1 58C43737
 P 10400 3350
 F 0 "#PWR017" H 10400 3100 50  0001 C CNN
@@ -608,7 +574,7 @@ F 3 "" H 9650 3050 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR018
+L sfp_v4-rescue:GND-power #PWR018
 U 1 1 58C43757
 P 10400 2750
 F 0 "#PWR018" H 10400 2500 50  0001 C CNN
@@ -685,7 +651,7 @@ F 3 "" H 9300 2500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR019
+L sfp_v4-rescue:GND-power #PWR019
 U 1 1 58C437B2
 P 8550 4000
 F 0 "#PWR019" H 8550 3750 50  0001 C CNN
@@ -696,7 +662,7 @@ F 3 "" H 8550 4000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR020
+L sfp_v4-rescue:GND-power #PWR020
 U 1 1 58C437B8
 P 9000 4000
 F 0 "#PWR020" H 9000 3750 50  0001 C CNN
@@ -718,7 +684,7 @@ F 3 "" H 9200 3050 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR021
+L sfp_v4-rescue:GND-power #PWR021
 U 1 1 58C437CC
 P 8550 2000
 F 0 "#PWR021" H 8550 1750 50  0001 C CNN
@@ -729,7 +695,7 @@ F 3 "" H 8550 2000 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR022
+L sfp_v4-rescue:GND-power #PWR022
 U 1 1 58C437D2
 P 9050 2000
 F 0 "#PWR022" H 9050 1750 50  0001 C CNN
@@ -742,7 +708,7 @@ $EndComp
 Text GLabel 9550 2500 2    60   Input ~ 0
 +6V
 $Comp
-L power:GND #PWR023
+L sfp_v4-rescue:GND-power #PWR023
 U 1 1 58C437E4
 P 8200 2400
 F 0 "#PWR023" H 8200 2150 50  0001 C CNN
@@ -767,7 +733,7 @@ Text Label 1850 5550 0    60   ~ 0
 RX-LOS
 Text Notes 2850 4800 1    60   ~ 0
 LOW=TX ON
-Text Notes 2600 4800 1    60   ~ 0
+Text Notes 2300 3650 2    60   ~ 0
 HIGH = LASER FAULT
 $Comp
 L sfp_v4-rescue:R R107
@@ -780,9 +746,7 @@ F 3 "" H 2650 5200 30  0000 C CNN
 	1    2650 5200
 	-1   0    0    1   
 $EndComp
-Text Notes 2700 4800 1    60   ~ 0
-LOW = SFP Present
-Text Notes 3100 4800 1    60   ~ 0
+Text Notes 4050 4800 2    60   ~ 0
 HIGH = Full Bandwidth
 Text Notes 3550 5500 0    60   ~ 0
 RX-LOS:\nHIGH =  Loss of Signal \nLOW = Normal operation
@@ -864,7 +828,7 @@ F 3 "" H 2950 6450 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR024
+L sfp_v4-rescue:GND-power #PWR024
 U 1 1 58C5AF47
 P 4050 6750
 F 0 "#PWR024" H 4050 6500 50  0001 C CNN
@@ -877,7 +841,7 @@ $EndComp
 Text Label 1850 6250 0    60   ~ 0
 VccR
 $Comp
-L power:GND #PWR025
+L sfp_v4-rescue:GND-power #PWR025
 U 1 1 58C5C28C
 P 3150 6400
 F 0 "#PWR025" H 3150 6150 50  0001 C CNN
@@ -888,7 +852,7 @@ F 3 "" H 3150 6400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR026
+L sfp_v4-rescue:GND-power #PWR026
 U 1 1 58C5C81B
 P 2950 7100
 F 0 "#PWR026" H 2950 6850 50  0001 C CNN
@@ -961,7 +925,7 @@ F 3 "" H 3200 2950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR027
+L sfp_v4-rescue:GND-power #PWR027
 U 1 1 58D290F3
 P 2450 3000
 F 0 "#PWR027" H 2450 2750 50  0001 C CNN
@@ -972,7 +936,7 @@ F 3 "" H 2450 3000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR028
+L sfp_v4-rescue:GND-power #PWR028
 U 1 1 58D29370
 P 3700 3200
 F 0 "#PWR028" H 3700 2950 50  0001 C CNN
@@ -1020,7 +984,7 @@ F 3 "" H 2200 2050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR029
+L sfp_v4-rescue:GND-power #PWR029
 U 1 1 58D2F166
 P 3950 2200
 F 0 "#PWR029" H 3950 1950 50  0001 C CNN
@@ -1031,7 +995,7 @@ F 3 "" H 3950 2200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR030
+L sfp_v4-rescue:GND-power #PWR030
 U 1 1 58D3001A
 P 7150 3300
 F 0 "#PWR030" H 7150 3050 50  0001 C CNN
@@ -1064,7 +1028,7 @@ U 1 1 58C4374B
 P 10400 3050
 F 0 "J106" H 10250 3150 50  0000 C CNN
 F 1 "SMA" H 10600 3050 50  0000 C CNN
-F 2 "awallinKiCadFootprints:CONNECTOR_SMA_Straight" H 10400 3050 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-2200_Horizontal" H 10400 3050 50  0001 C CNN
 F 3 "" H 10400 3050 50  0001 C CNN
 	1    10400 3050
 	1    0    0    -1  
@@ -1149,7 +1113,7 @@ F 3 "" H 8800 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR031
+L sfp_v4-rescue:GND-power #PWR031
 U 1 1 58D33D43
 P 4750 1950
 F 0 "#PWR031" H 4750 1700 50  0001 C CNN
@@ -1171,7 +1135,7 @@ F 3 "" H 8450 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR032
+L sfp_v4-rescue:GND-power #PWR032
 U 1 1 58D350FF
 P 8450 6050
 F 0 "#PWR032" H 8450 5800 50  0001 C CNN
@@ -1243,12 +1207,7 @@ Wire Wire Line
 Wire Wire Line
 	1550 5250 2100 5250
 Wire Wire Line
-	9100 650  9600 650 
-Connection ~ 9600 650 
-Connection ~ 10100 650 
-Wire Wire Line
 	10950 650  10950 700 
-Connection ~ 10600 650 
 Wire Wire Line
 	1550 5050 2450 5050
 Wire Wire Line
@@ -1630,7 +1589,7 @@ Wire Wire Line
 	9450 2800 9400 2800
 Connection ~ 9400 2800
 $Comp
-L power:GND #PWR033
+L sfp_v4-rescue:GND-power #PWR033
 U 1 1 58D39852
 P 9850 2850
 F 0 "#PWR033" H 9850 2600 50  0001 C CNN
@@ -1678,7 +1637,7 @@ Wire Wire Line
 	6650 1500 6600 1500
 Connection ~ 6600 1500
 $Comp
-L power:GND #PWR034
+L sfp_v4-rescue:GND-power #PWR034
 U 1 1 58D3A9B3
 P 7050 1550
 F 0 "#PWR034" H 7050 1300 50  0001 C CNN
@@ -1764,7 +1723,7 @@ F 3 "" H 7500 5800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR035
+L sfp_v4-rescue:GND-power #PWR035
 U 1 1 5AA2B080
 P 6750 6250
 F 0 "#PWR035" H 6750 6000 50  0001 C CNN
@@ -1775,7 +1734,7 @@ F 3 "" H 6750 6250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR036
+L sfp_v4-rescue:GND-power #PWR036
 U 1 1 5AA2B086
 P 7200 6250
 F 0 "#PWR036" H 7200 6000 50  0001 C CNN
@@ -1841,7 +1800,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 5300 6750 5300
 $Comp
-L power:GND #PWR037
+L sfp_v4-rescue:GND-power #PWR037
 U 1 1 5AA2B778
 P 6300 5800
 F 0 "#PWR037" H 6300 5550 50  0001 C CNN
@@ -1888,7 +1847,7 @@ Wire Wire Line
 	7650 4900 7650 4800
 Connection ~ 7650 4800
 $Comp
-L power:GND #PWR038
+L sfp_v4-rescue:GND-power #PWR038
 U 1 1 5AA2C7DC
 P 7650 5250
 F 0 "#PWR038" H 7650 5000 50  0001 C CNN
@@ -1947,7 +1906,7 @@ F 3 "" H 7750 4400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR039
+L sfp_v4-rescue:GND-power #PWR039
 U 1 1 5AA2D37F
 P 7000 3900
 F 0 "#PWR039" H 7000 3650 50  0001 C CNN
@@ -1958,7 +1917,7 @@ F 3 "" H 7000 3900 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR040
+L sfp_v4-rescue:GND-power #PWR040
 U 1 1 5AA2D385
 P 7500 3900
 F 0 "#PWR040" H 7500 3650 50  0001 C CNN
@@ -2009,12 +1968,6 @@ Wire Wire Line
 	1750 5850 1750 6150
 Wire Wire Line
 	1750 5750 1750 5850
-Wire Wire Line
-	9600 650  10100 650 
-Wire Wire Line
-	10100 650  10600 650 
-Wire Wire Line
-	10600 650  10950 650 
 Wire Wire Line
 	3050 4850 3250 4850
 Wire Wire Line
@@ -2119,4 +2072,226 @@ NoConn ~ 6900 5200
 NoConn ~ 6800 5200
 Text Notes 700  900  0    60   ~ 0
 This design is at: https://github.com/aewallin/SFP2SMA_2018.03\nTypical performance: http://www.anderswallin.net/2019/03/sma-to-sfp-frequency-stability/\nnotes: http://www.anderswallin.net/2018/04/500-mhz-sfp-board-v4/\n
+$Comp
+L 74xx:74HC14 U104
+U 1 1 5F92B3B6
+P 2450 3750
+F 0 "U104" H 2450 4067 50  0000 C CNN
+F 1 "74HC14" H 2450 3976 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2450 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 2450 3750 50  0001 C CNN
+	1    2450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U104
+U 2 1 5F92C857
+P 2450 4050
+F 0 "U104" H 2450 4367 50  0000 C CNN
+F 1 "74HC14" H 2450 4276 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2450 4050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 2450 4050 50  0001 C CNN
+	2    2450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U104
+U 3 1 5F92DC89
+P 2450 4350
+F 0 "U104" H 2450 4667 50  0000 C CNN
+F 1 "74HC14" H 2450 4576 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2450 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 2450 4350 50  0001 C CNN
+	3    2450 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U104
+U 7 1 5F92F1A7
+P 750 3900
+F 0 "U104" H 1000 3750 50  0000 L CNN
+F 1 "74HC14" H 1000 3650 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 750 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 750 3900 50  0001 C CNN
+	7    750  3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L sfp_v4-rescue:C C125
+U 1 1 5F92A850
+P 1100 3600
+F 0 "C125" H 1125 3700 50  0000 L CNN
+F 1 "100n" H 1125 3500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1138 3450 30  0001 C CNN
+F 3 "" H 1100 3600 60  0000 C CNN
+	1    1100 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 3450 1100 3350
+Wire Wire Line
+	1100 3350 750  3350
+Wire Wire Line
+	750  3350 750  3400
+$Comp
+L sfp_v4-rescue:GND-power #PWR0101
+U 1 1 5F945AFC
+P 1100 3800
+F 0 "#PWR0101" H 1100 3550 50  0001 C CNN
+F 1 "GND" H 1100 3650 50  0000 C CNN
+F 2 "" H 1100 3800 60  0000 C CNN
+F 3 "" H 1100 3800 60  0000 C CNN
+	1    1100 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 3800 1100 3750
+$Comp
+L sfp_v4-rescue:GND-power #PWR0102
+U 1 1 5F95D6AB
+P 750 4450
+F 0 "#PWR0102" H 750 4200 50  0001 C CNN
+F 1 "GND" H 750 4300 50  0000 C CNN
+F 2 "" H 750 4450 60  0000 C CNN
+F 3 "" H 750 4450 60  0000 C CNN
+	1    750  4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  4450 750  4400
+Wire Wire Line
+	2150 3750 1600 3750
+Text Label 1600 3750 0    60   ~ 0
+TX-FAULT
+Text Label 1600 4050 0    60   ~ 0
+RX-LOS
+Text Notes 1200 3950 0    60   ~ 0
+HIGH =  Loss of Signal \n
+Wire Wire Line
+	2150 4050 1600 4050
+Text Label 1600 4350 0    60   ~ 0
+MOD-ABS
+Wire Wire Line
+	2150 4350 1600 4350
+Text Notes 2200 4250 2    60   ~ 0
+LOW = SFP Present
+$Comp
+L Device:LED D101
+U 1 1 5F9F2E9D
+P 3000 3750
+F 0 "D101" H 2993 3967 50  0000 C CNN
+F 1 "LED" H 2993 3876 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3000 3750 50  0001 C CNN
+F 3 "~" H 3000 3750 50  0001 C CNN
+	1    3000 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D102
+U 1 1 5F9F38C8
+P 3000 4050
+F 0 "D102" H 2993 4267 50  0000 C CNN
+F 1 "LED" H 2993 4176 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3000 4050 50  0001 C CNN
+F 3 "~" H 3000 4050 50  0001 C CNN
+	1    3000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D103
+U 1 1 5F9F41F2
+P 3000 4350
+F 0 "D103" H 2993 4567 50  0000 C CNN
+F 1 "LED" H 2993 4476 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3000 4350 50  0001 C CNN
+F 3 "~" H 3000 4350 50  0001 C CNN
+	1    3000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L sfp_v4-rescue:R R129
+U 1 1 5F9F64E9
+P 3400 3750
+F 0 "R129" V 3480 3750 50  0000 C CNN
+F 1 "0R" V 3400 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3330 3750 30  0001 C CNN
+F 3 "" H 3400 3750 30  0000 C CNN
+	1    3400 3750
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1150 3350 2    60   Input ~ 0
++3.3V
+Wire Wire Line
+	1150 3350 1100 3350
+Connection ~ 1100 3350
+Text GLabel 3700 3650 2    60   Input ~ 0
++3.3V
+Wire Wire Line
+	3700 3650 3600 3650
+Wire Wire Line
+	3600 3650 3600 3750
+Wire Wire Line
+	3600 4350 3550 4350
+Wire Wire Line
+	3550 4050 3600 4050
+Connection ~ 3600 4050
+Wire Wire Line
+	3600 4050 3600 4350
+Wire Wire Line
+	3550 3750 3600 3750
+Connection ~ 3600 3750
+Wire Wire Line
+	3600 3750 3600 4050
+Wire Wire Line
+	3250 3750 3150 3750
+Wire Wire Line
+	3250 4050 3150 4050
+Wire Wire Line
+	3250 4350 3150 4350
+Wire Wire Line
+	2850 4350 2750 4350
+Wire Wire Line
+	2850 4050 2750 4050
+Wire Wire Line
+	2850 3750 2750 3750
+Text Notes 3650 4050 0    60   ~ 0
+set resistor value\nfor rated LED current\nat 3.3V
+$Comp
+L sfp_v4-rescue:R R130
+U 1 1 5FB461D7
+P 3400 4050
+F 0 "R130" V 3480 4050 50  0000 C CNN
+F 1 "0R" V 3400 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3330 4050 30  0001 C CNN
+F 3 "" H 3400 4050 30  0000 C CNN
+	1    3400 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sfp_v4-rescue:R R131
+U 1 1 5FB46BED
+P 3400 4350
+F 0 "R131" V 3480 4350 50  0000 C CNN
+F 1 "0R" V 3400 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3330 4350 30  0001 C CNN
+F 3 "" H 3400 4350 30  0000 C CNN
+	1    3400 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10600 650  10950 650 
+Connection ~ 10600 650 
+$Comp
+L sfp_v4-rescue:Conn_01x01 P106
+U 1 1 56C1DDB4
+P 10600 850
+F 0 "P106" H 10600 950 50  0000 C CNN
+F 1 "CONN_01X01" V 10700 850 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 10600 850 50  0001 C CNN
+F 3 "" H 10600 850 50  0000 C CNN
+	1    10600 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 650  10600 650 
 $EndSCHEMATC
