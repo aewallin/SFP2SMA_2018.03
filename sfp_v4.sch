@@ -106,25 +106,14 @@ SCL
 Text GLabel 4250 6250 2    60   Input ~ 0
 +3.3V
 $Comp
-L sfp_v4-rescue:R R112
-U 1 1 56C22C22
-P 2800 5600
-F 0 "R112" V 2880 5600 50  0000 C CNN
-F 1 "0R" V 2800 5600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 2730 5600 30  0001 C CNN
-F 3 "" H 2800 5600 30  0000 C CNN
-	1    2800 5600
-	-1   0    0    1   
-$EndComp
-$Comp
 L sfp_v4-rescue:GND-power #PWR04
 U 1 1 56C22E7C
-P 2800 5800
-F 0 "#PWR04" H 2800 5550 50  0001 C CNN
-F 1 "GND" H 2800 5650 50  0000 C CNN
-F 2 "" H 2800 5800 60  0000 C CNN
-F 3 "" H 2800 5800 60  0000 C CNN
-	1    2800 5800
+P 2500 5100
+F 0 "#PWR04" H 2500 4850 50  0001 C CNN
+F 1 "GND" H 2500 4950 50  0000 C CNN
+F 2 "" H 2500 5100 60  0000 C CNN
+F 3 "" H 2500 5100 60  0000 C CNN
+	1    2500 5100
 	1    0    0    -1  
 $EndComp
 Text Notes 950  7550 0    60   ~ 0
@@ -154,27 +143,14 @@ $EndComp
 $Comp
 L sfp_v4-rescue:R R109
 U 1 1 56C474F0
-P 2550 5200
-F 0 "R109" V 2550 5000 50  0000 C CNN
-F 1 "10k" V 2550 5200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 2480 5200 30  0001 C CNN
-F 3 "" H 2550 5200 30  0000 C CNN
-	1    2550 5200
+P 3750 5100
+F 0 "R109" V 3850 5100 50  0000 C CNN
+F 1 "10k" V 3750 5100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3680 5100 30  0001 C CNN
+F 3 "" H 3750 5100 30  0000 C CNN
+	1    3750 5100
 	-1   0    0    1   
 $EndComp
-$Comp
-L sfp_v4-rescue:R R111
-U 1 1 56C47665
-P 2800 5200
-F 0 "R111" V 2800 5000 50  0000 C CNN
-F 1 "DNI" V 2800 5200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 2730 5200 30  0001 C CNN
-F 3 "" H 2800 5200 30  0000 C CNN
-	1    2800 5200
-	-1   0    0    1   
-$EndComp
-Text GLabel 3350 4850 2    60   Input ~ 0
-+3.3V
 Text Notes 9050 1100 0    60   ~ 0
 3mm mounting holes in corners of board
 $Comp
@@ -211,40 +187,18 @@ F 3 "" H 2650 1850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L sfp_v4-rescue:GND-power #PWR07
-U 1 1 58C34C82
-P 3050 5800
-F 0 "#PWR07" H 3050 5550 50  0001 C CNN
-F 1 "GND" H 3050 5650 50  0000 C CNN
-F 2 "" H 3050 5800 60  0000 C CNN
-F 3 "" H 3050 5800 60  0000 C CNN
-	1    3050 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L sfp_v4-rescue:R R114
-U 1 1 58C34D35
-P 3050 5600
-F 0 "R114" V 3130 5600 50  0000 C CNN
-F 1 "DNI" V 3050 5600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 2980 5600 30  0001 C CNN
-F 3 "" H 3050 5600 30  0000 C CNN
-	1    3050 5600
-	-1   0    0    1   
-$EndComp
-$Comp
 L sfp_v4-rescue:R R113
 U 1 1 58C34DCC
-P 3050 5200
-F 0 "R113" V 3130 5200 50  0000 C CNN
-F 1 "10k" V 3050 5200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 2980 5200 30  0001 C CNN
-F 3 "" H 3050 5200 30  0000 C CNN
-	1    3050 5200
+P 4150 5100
+F 0 "R113" V 4230 5100 50  0000 C CNN
+F 1 "10k" V 4150 5100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4080 5100 30  0001 C CNN
+F 3 "" H 4150 5100 30  0000 C CNN
+	1    4150 5100
 	-1   0    0    1   
 $EndComp
-Text Label 1650 5450 0    60   ~ 0
-RATE-SELECT0
+Text Label 1850 5450 0    60   ~ 0
+RS0
 Text Label 1850 5050 0    60   ~ 0
 TX-DISABLE
 Text Label 1850 4950 0    60   ~ 0
@@ -355,38 +309,16 @@ Text Notes 550  5650 0    60   ~ 0
 $Comp
 L sfp_v4-rescue:R R115
 U 1 1 58C307F4
-P 3250 5200
-F 0 "R115" V 3330 5200 50  0000 C CNN
-F 1 "10k" V 3250 5200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 3180 5200 30  0001 C CNN
-F 3 "" H 3250 5200 30  0000 C CNN
-	1    3250 5200
+P 4350 5100
+F 0 "R115" V 4430 5100 50  0000 C CNN
+F 1 "10k" V 4350 5100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4280 5100 30  0001 C CNN
+F 3 "" H 4350 5100 30  0000 C CNN
+	1    4350 5100
 	-1   0    0    1   
 $EndComp
-$Comp
-L sfp_v4-rescue:R R116
-U 1 1 58C3090C
-P 3250 5600
-F 0 "R116" V 3330 5600 50  0000 C CNN
-F 1 "DNI" V 3250 5600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 3180 5600 30  0001 C CNN
-F 3 "" H 3250 5600 30  0000 C CNN
-	1    3250 5600
-	-1   0    0    1   
-$EndComp
-$Comp
-L sfp_v4-rescue:GND-power #PWR011
-U 1 1 58C309BF
-P 3250 5800
-F 0 "#PWR011" H 3250 5550 50  0001 C CNN
-F 1 "GND" H 3250 5650 50  0000 C CNN
-F 2 "" H 3250 5800 60  0000 C CNN
-F 3 "" H 3250 5800 60  0000 C CNN
-	1    3250 5800
-	1    0    0    -1  
-$EndComp
-Text Label 1650 5650 0    60   ~ 0
-Rate-select1
+Text Label 1850 5650 0    60   ~ 0
+RS1
 $Comp
 L sfp_v4-rescue:R R120
 U 1 1 58C334DA
@@ -721,35 +653,33 @@ $EndComp
 $Comp
 L sfp_v4-rescue:R R110
 U 1 1 58C5521A
-P 3500 5150
-F 0 "R110" V 3580 5150 50  0000 C CNN
-F 1 "10k" V 3500 5150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 3430 5150 30  0001 C CNN
-F 3 "" H 3500 5150 30  0000 C CNN
-	1    3500 5150
+P 4550 5100
+F 0 "R110" V 4630 5100 50  0000 C CNN
+F 1 "10k" V 4550 5100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4480 5100 30  0001 C CNN
+F 3 "" H 4550 5100 30  0000 C CNN
+	1    4550 5100
 	-1   0    0    1   
 $EndComp
 Text Label 1850 5550 0    60   ~ 0
 RX-LOS
-Text Notes 2850 4800 1    60   ~ 0
+Text Notes 2550 5150 0    60   ~ 0
 LOW=TX ON
 Text Notes 2300 3650 2    60   ~ 0
 HIGH = LASER FAULT
 $Comp
 L sfp_v4-rescue:R R107
 U 1 1 58C56FB5
-P 2650 5200
-F 0 "R107" V 2650 5000 50  0000 C CNN
-F 1 "10k" V 2650 5200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 2580 5200 30  0001 C CNN
-F 3 "" H 2650 5200 30  0000 C CNN
-	1    2650 5200
+P 3950 5100
+F 0 "R107" V 4050 5100 50  0000 C CNN
+F 1 "10k" V 3950 5100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3880 5100 30  0001 C CNN
+F 3 "" H 3950 5100 30  0000 C CNN
+	1    3950 5100
 	-1   0    0    1   
 $EndComp
-Text Notes 4050 4800 2    60   ~ 0
-HIGH = Full Bandwidth
-Text Notes 3550 5500 0    60   ~ 0
-RX-LOS:\nHIGH =  Loss of Signal \nLOW = Normal operation
+Text Notes 4150 4700 0    60   ~ 0
+RS0, RS1\nHIGH = \nFull Bandwidth
 $Comp
 L sfp_v4-rescue:C C120
 U 1 1 58C5920A
@@ -1145,28 +1075,6 @@ F 3 "" H 8450 6050 60  0000 C CNN
 	1    8450 6050
 	1    0    0    -1  
 $EndComp
-$Comp
-L sfp_v4-rescue:R R105
-U 1 1 58D38FC5
-P 9600 2800
-F 0 "R105" V 9680 2800 50  0000 C CNN
-F 1 "DNI" V 9600 2800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 9530 2800 30  0001 C CNN
-F 3 "" H 9600 2800 30  0000 C CNN
-	1    9600 2800
-	0    1    1    0   
-$EndComp
-$Comp
-L sfp_v4-rescue:R R104
-U 1 1 58D390B5
-P 9600 2650
-F 0 "R104" V 9680 2650 50  0000 C CNN
-F 1 "DNI" V 9600 2650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 9530 2650 30  0001 C CNN
-F 3 "" H 9600 2650 30  0000 C CNN
-	1    9600 2650
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7600 2100 7600 2000
 Wire Wire Line
@@ -1209,48 +1117,6 @@ Wire Wire Line
 Wire Wire Line
 	10950 650  10950 700 
 Wire Wire Line
-	1550 5050 2450 5050
-Wire Wire Line
-	1550 4950 2500 4950
-Wire Wire Line
-	3050 5050 3050 4850
-Wire Wire Line
-	2550 4850 2650 4850
-Wire Wire Line
-	2800 5050 2800 4850
-Connection ~ 3050 4850
-Wire Wire Line
-	2550 5050 2550 4850
-Connection ~ 2800 4850
-Wire Wire Line
-	2800 5450 2800 5400
-Wire Wire Line
-	3050 5450 3050 5400
-Wire Wire Line
-	3050 5800 3050 5750
-Wire Wire Line
-	2800 5800 2800 5750
-Wire Wire Line
-	3050 5400 2950 5400
-Wire Wire Line
-	2950 5400 2950 6050
-Wire Wire Line
-	2950 6050 2400 6050
-Connection ~ 3050 5400
-Wire Wire Line
-	2450 5050 2450 6000
-Wire Wire Line
-	2450 6000 2650 6000
-Wire Wire Line
-	2650 6000 2650 5400
-Wire Wire Line
-	2650 5400 2800 5400
-Connection ~ 2800 5400
-Wire Wire Line
-	2550 5400 2500 5400
-Wire Wire Line
-	2500 5400 2500 4950
-Wire Wire Line
 	7600 1500 7600 1450
 Wire Wire Line
 	7450 1250 7200 1250
@@ -1268,22 +1134,6 @@ Wire Wire Line
 Connection ~ 9450 5550
 Wire Wire Line
 	3250 5800 3250 5750
-Wire Wire Line
-	3250 5450 3250 5400
-Wire Wire Line
-	3250 4850 3250 5000
-Connection ~ 3250 4850
-Wire Wire Line
-	3250 5400 3200 5400
-Wire Wire Line
-	3200 5400 3200 6100
-Wire Wire Line
-	3200 6100 2300 6100
-Wire Wire Line
-	2300 6100 2300 5650
-Connection ~ 3250 5400
-Wire Wire Line
-	2300 5650 1550 5650
 Wire Wire Line
 	5550 1900 5350 1900
 Wire Wire Line
@@ -1310,8 +1160,6 @@ Wire Wire Line
 Connection ~ 5400 1700
 Wire Wire Line
 	7000 1800 7200 1800
-Wire Wire Line
-	6700 1800 6600 1800
 Wire Wire Line
 	6250 1800 6200 1800
 Wire Wire Line
@@ -1381,8 +1229,6 @@ Connection ~ 8200 2950
 Wire Wire Line
 	9800 3050 10000 3050
 Wire Wire Line
-	9500 3050 9400 3050
-Wire Wire Line
 	9050 3050 9000 3050
 Wire Wire Line
 	9050 2100 9050 2000
@@ -1417,36 +1263,6 @@ Wire Wire Line
 Connection ~ 9000 3050
 Wire Wire Line
 	3850 1700 4500 1700
-Wire Wire Line
-	1550 5550 3500 5550
-Wire Wire Line
-	2550 5400 2550 5350
-Wire Wire Line
-	2650 5350 2600 5350
-Wire Wire Line
-	2600 5350 2600 5450
-Wire Wire Line
-	2400 5350 1550 5350
-Wire Wire Line
-	2650 5050 2650 4850
-Connection ~ 2650 4850
-Wire Wire Line
-	2600 5450 2400 5450
-Wire Wire Line
-	2400 5450 2400 5350
-Wire Wire Line
-	1550 5450 2350 5450
-Wire Wire Line
-	2350 5450 2350 5500
-Wire Wire Line
-	2350 5500 2400 5500
-Wire Wire Line
-	2400 5500 2400 6050
-Wire Wire Line
-	3500 5550 3500 5300
-Wire Wire Line
-	3500 5000 3250 5000
-Connection ~ 3250 5000
 Wire Wire Line
 	3400 6700 3750 6700
 Wire Wire Line
@@ -1580,80 +1396,6 @@ Wire Wire Line
 Wire Wire Line
 	8450 5650 8450 5550
 Connection ~ 8450 5550
-Wire Wire Line
-	9450 2650 9400 2650
-Wire Wire Line
-	9400 2650 9400 2800
-Connection ~ 9400 3050
-Wire Wire Line
-	9450 2800 9400 2800
-Connection ~ 9400 2800
-$Comp
-L sfp_v4-rescue:GND-power #PWR033
-U 1 1 58D39852
-P 9850 2850
-F 0 "#PWR033" H 9850 2600 50  0001 C CNN
-F 1 "GND" H 9850 2700 50  0000 C CNN
-F 2 "" H 9850 2850 60  0000 C CNN
-F 3 "" H 9850 2850 60  0000 C CNN
-	1    9850 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9750 2800 9850 2800
-Wire Wire Line
-	9850 2650 9850 2800
-Wire Wire Line
-	9750 2650 9850 2650
-Connection ~ 9850 2800
-$Comp
-L sfp_v4-rescue:R R101
-U 1 1 58D3A0CB
-P 6800 1400
-F 0 "R101" V 6800 1100 50  0000 C CNN
-F 1 "DNI" V 6800 1400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6730 1400 30  0001 C CNN
-F 3 "" H 6800 1400 30  0000 C CNN
-	1    6800 1400
-	0    1    1    0   
-$EndComp
-$Comp
-L sfp_v4-rescue:R R103
-U 1 1 58D3A659
-P 6800 1500
-F 0 "R103" V 6800 1150 50  0000 C CNN
-F 1 "DNI" V 6800 1500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6730 1500 30  0001 C CNN
-F 3 "" H 6800 1500 30  0000 C CNN
-	1    6800 1500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6650 1400 6600 1400
-Wire Wire Line
-	6600 1400 6600 1500
-Connection ~ 6600 1800
-Wire Wire Line
-	6650 1500 6600 1500
-Connection ~ 6600 1500
-$Comp
-L sfp_v4-rescue:GND-power #PWR034
-U 1 1 58D3A9B3
-P 7050 1550
-F 0 "#PWR034" H 7050 1300 50  0001 C CNN
-F 1 "GND" H 7050 1400 50  0000 C CNN
-F 2 "" H 7050 1550 60  0000 C CNN
-F 3 "" H 7050 1550 60  0000 C CNN
-	1    7050 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6950 1500 7050 1500
-Wire Wire Line
-	7050 1400 7050 1500
-Wire Wire Line
-	6950 1400 7050 1400
-Connection ~ 7050 1500
 $Comp
 L sfp_v4-rescue:TL071-RESCUE-sfp_v4 U101
 U 1 1 5AA29883
@@ -1667,28 +1409,6 @@ F 3 "" H 7050 5050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5000 2750 5000 4900
-$Comp
-L sfp_v4-rescue:R R128
-U 1 1 5AA2A6A0
-P 7950 4800
-F 0 "R128" V 8030 4800 50  0000 C CNN
-F 1 "0R" V 7950 4800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 7880 4800 50  0001 C CNN
-F 3 "" H 7950 4800 50  0001 C CNN
-	1    7950 4800
-	0    1    1    0   
-$EndComp
-$Comp
-L sfp_v4-rescue:R R127
-U 1 1 5AA2A795
-P 7650 5050
-F 0 "R127" V 7730 5050 50  0000 C CNN
-F 1 "DNI" V 7650 5050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 7580 5050 50  0001 C CNN
-F 3 "" H 7650 5050 50  0001 C CNN
-	1    7650 5050
-	-1   0    0    1   
-$EndComp
 $Comp
 L sfp_v4-rescue:R R108
 U 1 1 5AA2A891
@@ -1817,23 +1537,6 @@ Wire Wire Line
 Wire Wire Line
 	6300 5000 6300 4900
 Connection ~ 6300 4900
-$Comp
-L sfp_v4-rescue:R R106
-U 1 1 5AA2BCC0
-P 5900 4900
-F 0 "R106" V 5980 4900 50  0000 C CNN
-F 1 "0R" V 5900 4900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 5830 4900 50  0001 C CNN
-F 3 "" H 5900 4900 50  0001 C CNN
-	1    5900 4900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5000 4900 5750 4900
-Wire Wire Line
-	6050 4900 6300 4900
-Text Notes 5450 4700 0    60   ~ 0
-option:\nAC-couple with\n100nF cap here?\n
 Wire Wire Line
 	6300 5350 7300 5350
 Wire Wire Line
@@ -1841,26 +1544,6 @@ Wire Wire Line
 Wire Wire Line
 	7300 5000 7200 5000
 Connection ~ 6300 5350
-Wire Wire Line
-	7800 4800 7650 4800
-Wire Wire Line
-	7650 4900 7650 4800
-Connection ~ 7650 4800
-$Comp
-L sfp_v4-rescue:GND-power #PWR038
-U 1 1 5AA2C7DC
-P 7650 5250
-F 0 "#PWR038" H 7650 5000 50  0001 C CNN
-F 1 "GND" H 7650 5100 50  0000 C CNN
-F 2 "" H 7650 5250 60  0000 C CNN
-F 3 "" H 7650 5250 60  0000 C CNN
-	1    7650 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7650 5250 7650 5200
-Wire Wire Line
-	8100 4800 8350 4800
 $Comp
 L sfp_v4-rescue:C C122
 U 1 1 5AA2D367
@@ -1969,21 +1652,9 @@ Wire Wire Line
 Wire Wire Line
 	1750 5750 1750 5850
 Wire Wire Line
-	3050 4850 3250 4850
-Wire Wire Line
-	2800 4850 3050 4850
-Wire Wire Line
-	3050 5400 3050 5350
-Wire Wire Line
-	2800 5400 2800 5350
-Wire Wire Line
 	7200 1800 7450 1800
 Wire Wire Line
 	9450 5550 9850 5550
-Wire Wire Line
-	3250 4850 3350 4850
-Wire Wire Line
-	3250 5400 3250 5350
 Wire Wire Line
 	5350 1900 5200 1900
 Wire Wire Line
@@ -2015,10 +1686,6 @@ Wire Wire Line
 Wire Wire Line
 	9000 3050 8950 3050
 Wire Wire Line
-	2650 4850 2800 4850
-Wire Wire Line
-	3250 5000 3250 5050
-Wire Wire Line
 	3900 6250 4150 6250
 Wire Wire Line
 	4150 6250 4250 6250
@@ -2037,18 +1704,6 @@ Wire Wire Line
 Wire Wire Line
 	8450 5550 8900 5550
 Wire Wire Line
-	9400 3050 9350 3050
-Wire Wire Line
-	9400 2800 9400 3050
-Wire Wire Line
-	9850 2800 9850 2850
-Wire Wire Line
-	6600 1800 6550 1800
-Wire Wire Line
-	6600 1500 6600 1800
-Wire Wire Line
-	7050 1500 7050 1550
-Wire Wire Line
 	7200 5800 7150 5800
 Wire Wire Line
 	6750 5800 6750 5900
@@ -2056,8 +1711,6 @@ Wire Wire Line
 	6300 4900 6600 4900
 Wire Wire Line
 	6300 5350 6300 5300
-Wire Wire Line
-	7650 4800 7200 4800
 Wire Wire Line
 	7000 4400 7000 4600
 Wire Wire Line
@@ -2076,8 +1729,8 @@ $Comp
 L 74xx:74HC14 U104
 U 1 1 5F92B3B6
 P 2450 3750
-F 0 "U104" H 2450 4067 50  0000 C CNN
-F 1 "74HC14" H 2450 3976 50  0000 C CNN
+F 0 "U104" H 2600 3650 50  0000 C CNN
+F 1 "74HC14" H 2600 3850 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2450 3750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 2450 3750 50  0001 C CNN
 	1    2450 3750
@@ -2087,8 +1740,8 @@ $Comp
 L 74xx:74HC14 U104
 U 2 1 5F92C857
 P 2450 4050
-F 0 "U104" H 2450 4367 50  0000 C CNN
-F 1 "74HC14" H 2450 4276 50  0000 C CNN
+F 0 "U104" H 2600 3950 50  0000 C CNN
+F 1 "74HC14" H 2600 4150 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2450 4050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 2450 4050 50  0001 C CNN
 	2    2450 4050
@@ -2098,8 +1751,8 @@ $Comp
 L 74xx:74HC14 U104
 U 3 1 5F92DC89
 P 2450 4350
-F 0 "U104" H 2450 4667 50  0000 C CNN
-F 1 "74HC14" H 2450 4576 50  0000 C CNN
+F 0 "U104" H 2600 4250 50  0000 C CNN
+F 1 "74HC14" H 2600 4450 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2450 4350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 2450 4350 50  0001 C CNN
 	3    2450 4350
@@ -2213,7 +1866,7 @@ L sfp_v4-rescue:R R129
 U 1 1 5F9F64E9
 P 3400 3750
 F 0 "R129" V 3480 3750 50  0000 C CNN
-F 1 "0R" V 3400 3750 50  0000 C CNN
+F 1 "200R" V 3400 3750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 3330 3750 30  0001 C CNN
 F 3 "" H 3400 3750 30  0000 C CNN
 	1    3400 3750
@@ -2261,7 +1914,7 @@ L sfp_v4-rescue:R R130
 U 1 1 5FB461D7
 P 3400 4050
 F 0 "R130" V 3480 4050 50  0000 C CNN
-F 1 "0R" V 3400 4050 50  0000 C CNN
+F 1 "200R" V 3400 4050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 3330 4050 30  0001 C CNN
 F 3 "" H 3400 4050 30  0000 C CNN
 	1    3400 4050
@@ -2272,7 +1925,7 @@ L sfp_v4-rescue:R R131
 U 1 1 5FB46BED
 P 3400 4350
 F 0 "R131" V 3480 4350 50  0000 C CNN
-F 1 "0R" V 3400 4350 50  0000 C CNN
+F 1 "200R" V 3400 4350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 3330 4350 30  0001 C CNN
 F 3 "" H 3400 4350 30  0000 C CNN
 	1    3400 4350
@@ -2294,4 +1947,72 @@ F 3 "" H 10600 850 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	9100 650  10600 650 
+Text GLabel 3650 4900 0    60   Input ~ 0
++3.3V
+Wire Wire Line
+	4550 4900 4550 4950
+Text Label 4550 5300 3    60   ~ 0
+RX-LOS
+Wire Wire Line
+	4550 5300 4550 5250
+Wire Wire Line
+	1550 5550 1850 5550
+Wire Wire Line
+	4350 4950 4350 4900
+Wire Wire Line
+	4350 4900 4550 4900
+Text Label 4350 5450 1    60   ~ 0
+RS1
+Wire Wire Line
+	4350 5250 4350 5450
+Wire Wire Line
+	1550 5650 1850 5650
+Wire Wire Line
+	4150 4950 4150 4900
+Wire Wire Line
+	4150 4900 4350 4900
+Connection ~ 4350 4900
+Text Label 4150 5450 1    60   ~ 0
+RS0
+Wire Wire Line
+	4150 5250 4150 5450
+Wire Wire Line
+	1550 5450 1850 5450
+Wire Wire Line
+	3950 4950 3950 4900
+Wire Wire Line
+	3950 4900 4150 4900
+Connection ~ 4150 4900
+Text Label 3950 5700 1    60   ~ 0
+MOD-ABS
+Wire Wire Line
+	3950 5250 3950 5700
+Wire Wire Line
+	3750 4950 3750 4900
+Wire Wire Line
+	3750 4900 3950 4900
+Connection ~ 3950 4900
+Text Label 3750 5700 1    60   ~ 0
+TX-FAULT
+Wire Wire Line
+	3750 5250 3750 5700
+Wire Wire Line
+	1550 4950 1850 4950
+Wire Wire Line
+	1550 5350 1850 5350
+Wire Wire Line
+	2500 5050 2500 5100
+Wire Wire Line
+	1550 5050 2500 5050
+Wire Wire Line
+	3650 4900 3750 4900
+Connection ~ 3750 4900
+Wire Wire Line
+	5000 4900 6300 4900
+Wire Wire Line
+	7200 4800 8350 4800
+Wire Wire Line
+	9350 3050 9500 3050
+Wire Wire Line
+	6550 1800 6700 1800
 $EndSCHEMATC
