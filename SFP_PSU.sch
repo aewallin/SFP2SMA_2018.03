@@ -755,4 +755,17 @@ Wire Wire Line
 Connection ~ 5150 1800
 Wire Wire Line
 	5150 1800 5150 1850
+$Comp
+L Connector:DIN-5 J202
+U 1 1 5F989F17
+P 1550 5000
+F 0 "J202" H 1550 4725 50  0000 C CNN
+F 1 "DIN-5" H 1550 4634 50  0000 C CNN
+F 2 "" H 1550 5000 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 1550 5000 50  0001 C CNN
+	1    1550 5000
+	1    0    0    -1  
+$EndComp
+Text Notes 1300 6500 0    60   ~ 0
+Power Supply e.g.\nMeanwell  GP25A13D-R1B (DigiKey 1866-1826-ND)\nhttps://www.meanwell.com/Upload/PDF/GP25A/GP25A-SPEC.PDF\nOutput 5VDC at 2.5A; 12VDC at 1A; -12VDC at 0.3A with DIN 5 pin plug\nPins: (check order!)\n1 COM\n2 COM\n3 +5VDC\n4 -12VDC\n5 +12VDC
 $EndSCHEMATC
