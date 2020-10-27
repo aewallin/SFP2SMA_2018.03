@@ -420,17 +420,6 @@ F 3 "" H 4250 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4250 4300
-$Comp
-L sfp_v4-rescue:Conn_01x03 J201
-U 1 1 58C3D048
-P 1150 2750
-F 0 "J201" H 1150 2950 50  0000 C CNN
-F 1 "CONN_01X03" V 1250 2750 50  0000 C CNN
-F 2 "awallinKiCadFootprints:CONNECTOR_01x03_200mil" H 1150 2750 50  0001 C CNN
-F 3 "" H 1150 2750 50  0001 C CNN
-	1    1150 2750
-	-1   0    0    1   
-$EndComp
 Text GLabel 1550 2650 2    60   Input ~ 0
 +VIN
 Text GLabel 1550 2950 2    60   Input ~ 0
@@ -449,7 +438,6 @@ Wire Wire Line
 	1450 2750 1350 2750
 Wire Wire Line
 	1550 2650 1350 2650
-Connection ~ 4150 1350
 Connection ~ 4350 2550
 $Comp
 L sfp_v4-rescue:LED D204
@@ -595,8 +583,8 @@ Text Notes 4900 1000 0    60   ~ 0
 1273625
 Text Notes 7050 1750 0    60   ~ 0
 2463991 \n1.9V 2mA
-Text Notes 950  2450 0    60   ~ 0
-277-1264-ND 
+Text Notes 1050 1950 0    60   ~ 0
+3pin terminal block 277-1264-ND 
 Text Notes 7700 3050 0    60   ~ 0
 Vout= 1.21V(1+R2/R1) + 3uA * R2
 Text GLabel 3600 4300 0    60   Input ~ 0
@@ -639,8 +627,6 @@ Wire Wire Line
 Wire Wire Line
 	4250 4300 4500 4300
 Wire Wire Line
-	4150 1350 4150 2550
-Wire Wire Line
 	4350 2550 4600 2550
 Wire Wire Line
 	6900 4300 7000 4300
@@ -652,8 +638,6 @@ Wire Wire Line
 	5300 3000 5300 2950
 Text Notes 1050 3850 0    60   ~ 0
 D201 and D202 - reverse polarity protection.\ne.g. Farnell 9555986\nMBRA140T3G -  Schottky Rectifier, 40 V, 1 A, Single, DO-214AC,\nor similar
-Text Notes 650  1950 0    60   ~ 0
-+/- 9 V or more\nDC supply\n\ncheck 3V3 regulator temperature if using +12VDC!
 $Comp
 L Regulator_Linear:LT1963AxQ-3.3 U203
 U 1 1 5F92F725
@@ -671,7 +655,7 @@ Wire Wire Line
 	6150 2650 6150 2550
 Connection ~ 6150 2550
 Wire Wire Line
-	6150 2550 6800 2550
+	6150 2550 6300 2550
 Wire Wire Line
 	4600 2550 4900 2550
 Wire Wire Line
@@ -687,8 +671,6 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1963aff
 	1    5150 1450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5150 1750 5150 1800
 Wire Wire Line
 	5550 1450 5900 1450
 Wire Wire Line
@@ -710,20 +692,6 @@ Wire Wire Line
 	5550 4400 5800 4400
 Wire Wire Line
 	5550 4300 6050 4300
-$Comp
-L Mechanical:Heatsink_Pad HS201
-U 1 1 5F974E29
-P 4500 4700
-F 0 "HS201" H 4600 4950 50  0000 R CNN
-F 1 "Heatsink_Pad" H 4600 4850 50  0000 R CNN
-F 2 "Heatsink:Heatsink_Fischer_FK24413D2PAK_26x13mm" H 4512 4650 50  0001 C CNN
-F 3 "~" H 4512 4650 50  0001 C CNN
-	1    4500 4700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4500 4600 4500 4400
-Connection ~ 4500 4400
 Wire Wire Line
 	4850 3000 5300 3000
 $Comp
@@ -737,35 +705,125 @@ F 3 "~" H 4862 3100 50  0001 C CNN
 	1    4850 3150
 	-1   0    0    1   
 $EndComp
+Text Notes 1300 6500 0    60   ~ 0
+Power Supply e.g.\nMeanwell  GP25A13D-R1B (DigiKey 1866-1826-ND)\nhttps://www.meanwell.com/Upload/PDF/GP25A/GP25A-SPEC.PDF\nOutput 5VDC at 2.5A; 12VDC at 1A; -12VDC at 0.3A with DIN 5 pin plug\nPins: (check order!)\n1 COM\n2 COM\n3 +5VDC\n4 -12VDC\n5 +12VDC
 $Comp
-L Mechanical:Heatsink_Pad HS202
-U 1 1 5F989942
-P 4700 1950
-F 0 "HS202" H 4800 2200 50  0000 R CNN
-F 1 "Heatsink_Pad" H 4800 2100 50  0000 R CNN
-F 2 "Heatsink:Heatsink_Fischer_FK24413D2PAK_26x13mm" H 4712 1900 50  0001 C CNN
-F 3 "~" H 4712 1900 50  0001 C CNN
-	1    4700 1950
+L Connector_Generic:Conn_01x04 J201
+U 1 1 5F9B842E
+P 1150 2750
+F 0 "J201" H 1068 2325 50  0000 C CNN
+F 1 "Conn_01x04" H 1068 2416 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 1150 2750 50  0001 C CNN
+F 3 "~" H 1150 2750 50  0001 C CNN
+	1    1150 2750
+	-1   0    0    1   
+$EndComp
+Text GLabel 1550 2550 2    60   Input ~ 0
++VIN_FOR_3V3
+Wire Wire Line
+	1550 2550 1350 2550
+$Comp
+L sfp_v4-rescue:D D206
+U 1 1 5F9BFB8E
+P 4000 2550
+F 0 "D206" H 4000 2650 50  0000 C CNN
+F 1 "D" H 4000 2450 50  0000 C CNN
+F 2 "awallinKiCadFootprints:DIODE_DO-214BA" H 4000 2550 50  0001 C CNN
+F 3 "" H 4000 2550 50  0001 C CNN
+	1    4000 2550
+	-1   0    0    1   
+$EndComp
+Text GLabel 3800 2550 0    60   Input ~ 0
++VIN_FOR_3V3
+Wire Wire Line
+	3850 2550 3800 2550
+Wire Wire Line
+	5150 1750 5150 1850
+$Comp
+L Connector:TestPoint_2Pole TP201
+U 1 1 5FAA4BAC
+P 6050 4000
+F 0 "TP201" V 6096 3912 50  0000 R CNN
+F 1 "TestPoint_2Pole" V 6005 3912 50  0000 R CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 6050 4000 50  0001 C CNN
+F 3 "~" H 6050 4000 50  0001 C CNN
+	1    6050 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sfp_v4-rescue:GND-power #PWR?
+U 1 1 5FAA64CD
+P 6050 3700
+AR Path="/5FAA64CD" Ref="#PWR?"  Part="1" 
+AR Path="/58C39691/5FAA64CD" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 6050 3450 50  0001 C CNN
+F 1 "GND" H 6050 3550 50  0000 C CNN
+F 2 "" H 6050 3700 50  0001 C CNN
+F 3 "" H 6050 3700 50  0001 C CNN
+	1    6050 3700
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4700 1850 4700 1800
+	6050 3800 6050 3700
 Wire Wire Line
-	4700 1800 5150 1800
-Connection ~ 5150 1800
-Wire Wire Line
-	5150 1800 5150 1850
+	6050 4300 6050 4200
 $Comp
-L Connector:DIN-5 J202
-U 1 1 5F989F17
-P 1550 5000
-F 0 "J202" H 1550 4725 50  0000 C CNN
-F 1 "DIN-5" H 1550 4634 50  0000 C CNN
-F 2 "" H 1550 5000 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 1550 5000 50  0001 C CNN
-	1    1550 5000
+L Connector:TestPoint_2Pole TP202
+U 1 1 5FAB0EE3
+P 6300 3000
+F 0 "TP202" V 6254 3058 50  0000 L CNN
+F 1 "TestPoint_2Pole" V 6345 3058 50  0000 L CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 6300 3000 50  0001 C CNN
+F 3 "~" H 6300 3000 50  0001 C CNN
+	1    6300 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L sfp_v4-rescue:GND-power #PWR?
+U 1 1 5FAB507C
+P 6300 3300
+AR Path="/5FAB507C" Ref="#PWR?"  Part="1" 
+AR Path="/58C39691/5FAB507C" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 6300 3050 50  0001 C CNN
+F 1 "GND" H 6300 3150 50  0000 C CNN
+F 2 "" H 6300 3300 50  0001 C CNN
+F 3 "" H 6300 3300 50  0001 C CNN
+	1    6300 3300
 	1    0    0    -1  
 $EndComp
-Text Notes 1300 6500 0    60   ~ 0
-Power Supply e.g.\nMeanwell  GP25A13D-R1B (DigiKey 1866-1826-ND)\nhttps://www.meanwell.com/Upload/PDF/GP25A/GP25A-SPEC.PDF\nOutput 5VDC at 2.5A; 12VDC at 1A; -12VDC at 0.3A with DIN 5 pin plug\nPins: (check order!)\n1 COM\n2 COM\n3 +5VDC\n4 -12VDC\n5 +12VDC
+Wire Wire Line
+	6300 3300 6300 3200
+Wire Wire Line
+	6300 2800 6300 2550
+Connection ~ 6300 2550
+Wire Wire Line
+	6300 2550 6800 2550
+$Comp
+L Connector:TestPoint_2Pole TP203
+U 1 1 5FABC1DC
+P 6350 1050
+F 0 "TP203" V 6396 962 50  0000 R CNN
+F 1 "TestPoint_2Pole" V 6305 962 50  0000 R CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 6350 1050 50  0001 C CNN
+F 3 "~" H 6350 1050 50  0001 C CNN
+	1    6350 1050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 1250 6350 1350
+$Comp
+L sfp_v4-rescue:GND-power #PWR?
+U 1 1 5FABF975
+P 6350 800
+AR Path="/5FABF975" Ref="#PWR?"  Part="1" 
+AR Path="/58C39691/5FABF975" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 6350 550 50  0001 C CNN
+F 1 "GND" H 6350 650 50  0000 C CNN
+F 2 "" H 6350 800 50  0001 C CNN
+F 3 "" H 6350 800 50  0001 C CNN
+	1    6350 800 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 850  6350 800 
 $EndSCHEMATC

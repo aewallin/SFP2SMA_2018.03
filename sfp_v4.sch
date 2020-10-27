@@ -24,7 +24,7 @@ F 3 "" H 7600 2100 60  0000 C CNN
 	1    7600 2100
 	1    0    0    -1  
 $EndComp
-Text Notes 7800 1450 0    60   ~ 0
+Text Notes 7400 1600 0    60   ~ 0
 RX output1
 $Comp
 L sfp_v4-rescue:C C108
@@ -203,41 +203,8 @@ Text Label 1850 5050 0    60   ~ 0
 TX-DISABLE
 Text Label 1850 4950 0    60   ~ 0
 TX-FAULT
-$Comp
-L sfp_v4-rescue:Conn_Coaxial J101
-U 1 1 58C387EA
-P 7600 1250
-F 0 "J101" H 7610 1370 50  0000 C CNN
-F 1 "BNC" H 7800 1250 50  0000 C CNN
-F 2 "awallinKiCadFootprints:BNC_2PIN" H 7600 1250 50  0001 C CNN
-F 3 "" H 7600 1250 50  0001 C CNN
-	1    7600 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L sfp_v4-rescue:GND-power #PWR08
-U 1 1 58C38887
-P 7600 1500
-F 0 "#PWR08" H 7600 1250 50  0001 C CNN
-F 1 "GND" H 7600 1350 50  0000 C CNN
-F 2 "" H 7600 1500 60  0000 C CNN
-F 3 "" H 7600 1500 60  0000 C CNN
-	1    7600 1500
-	1    0    0    -1  
-$EndComp
 Text Notes 10200 5400 0    60   ~ 0
 TX input\n-10 dBm to 0 dBm\n1 MHz to 200 MHz
-$Comp
-L sfp_v4-rescue:Conn_Coaxial J103
-U 1 1 58C3A125
-P 10000 4900
-F 0 "J103" H 10010 5020 50  0000 C CNN
-F 1 "BNC" H 10150 4900 50  0000 C CNN
-F 2 "awallinKiCadFootprints:BNC_2PIN" H 10000 4900 50  0001 C CNN
-F 3 "" H 10000 4900 50  0001 C CNN
-	1    10000 4900
-	1    0    0    -1  
-$EndComp
 $Comp
 L sfp_v4-rescue:GND-power #PWR09
 U 1 1 58C3A1EF
@@ -247,17 +214,6 @@ F 1 "GND" H 10000 5700 50  0000 C CNN
 F 2 "" H 10000 5850 60  0000 C CNN
 F 3 "" H 10000 5850 60  0000 C CNN
 	1    10000 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L sfp_v4-rescue:GND-power #PWR010
-U 1 1 58C3A27E
-P 10000 5200
-F 0 "#PWR010" H 10000 4950 50  0001 C CNN
-F 1 "GND" H 10000 5050 50  0000 C CNN
-F 2 "" H 10000 5200 60  0000 C CNN
-F 3 "" H 10000 5200 60  0000 C CNN
-	1    10000 5200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -504,17 +460,6 @@ F 2 "Capacitors_SMD:C_0805" H 9688 2900 30  0001 C CNN
 F 3 "" H 9650 3050 60  0000 C CNN
 	1    9650 3050
 	0    1    1    0   
-$EndComp
-$Comp
-L sfp_v4-rescue:GND-power #PWR018
-U 1 1 58C43757
-P 10400 2750
-F 0 "#PWR018" H 10400 2500 50  0001 C CNN
-F 1 "GND" H 10400 2600 50  0000 C CNN
-F 2 "" H 10400 2750 60  0000 C CNN
-F 3 "" H 10400 2750 60  0000 C CNN
-	1    10400 2750
-	1    0    0    -1  
 $EndComp
 $Comp
 L sfp_v4-rescue:C C103
@@ -942,17 +887,6 @@ Text Notes 3650 1600 0    60   ~ 0
 Text Notes 10650 2750 0    60   ~ 0
 RX output2
 $Comp
-L sfp_v4-rescue:Conn_Coaxial J105
-U 1 1 58C43751
-P 10400 2500
-F 0 "J105" H 10410 2620 50  0000 C CNN
-F 1 "BNC" H 10600 2500 50  0000 C CNN
-F 2 "awallinKiCadFootprints:BNC_2PIN" H 10400 2500 50  0001 C CNN
-F 3 "" H 10400 2500 50  0001 C CNN
-	1    10400 2500
-	1    0    0    -1  
-$EndComp
-$Comp
 L sfp_v4-rescue:Conn_Coaxial J106
 U 1 1 58C4374B
 P 10400 3050
@@ -1117,21 +1051,7 @@ Wire Wire Line
 Wire Wire Line
 	10950 650  10950 700 
 Wire Wire Line
-	7600 1500 7600 1450
-Wire Wire Line
-	7450 1250 7200 1250
-Wire Wire Line
-	7200 1250 7200 1800
-Connection ~ 7200 1800
-Wire Wire Line
-	10000 5200 10000 5100
-Wire Wire Line
 	10000 5850 10000 5750
-Wire Wire Line
-	9850 4900 9450 4900
-Wire Wire Line
-	9450 4900 9450 5550
-Connection ~ 9450 5550
 Wire Wire Line
 	3250 5800 3250 5750
 Wire Wire Line
@@ -1158,8 +1078,6 @@ Wire Wire Line
 Wire Wire Line
 	5400 1550 5400 1700
 Connection ~ 5400 1700
-Wire Wire Line
-	7000 1800 7200 1800
 Wire Wire Line
 	6250 1800 6200 1800
 Wire Wire Line
@@ -1196,13 +1114,6 @@ Connection ~ 6200 1800
 Wire Wire Line
 	10400 3350 10400 3250
 Wire Wire Line
-	10400 2750 10400 2700
-Wire Wire Line
-	10250 2500 10000 2500
-Wire Wire Line
-	10000 2500 10000 3050
-Connection ~ 10000 3050
-Wire Wire Line
 	8350 3150 8150 3150
 Wire Wire Line
 	8150 3250 8150 3150
@@ -1226,8 +1137,6 @@ Wire Wire Line
 Wire Wire Line
 	8200 2800 8200 2950
 Connection ~ 8200 2950
-Wire Wire Line
-	9800 3050 10000 3050
 Wire Wire Line
 	9050 3050 9000 3050
 Wire Wire Line
@@ -1315,8 +1224,6 @@ Wire Wire Line
 Wire Wire Line
 	2450 6350 2450 6700
 Connection ~ 2950 6700
-Wire Wire Line
-	9200 5550 9450 5550
 Wire Wire Line
 	900  3000 1200 3000
 Wire Wire Line
@@ -1652,10 +1559,6 @@ Wire Wire Line
 Wire Wire Line
 	1750 5750 1750 5850
 Wire Wire Line
-	7200 1800 7450 1800
-Wire Wire Line
-	9450 5550 9850 5550
-Wire Wire Line
 	5350 1900 5200 1900
 Wire Wire Line
 	6200 2300 6150 2300
@@ -1669,8 +1572,6 @@ Wire Wire Line
 	6250 1250 6350 1250
 Wire Wire Line
 	6200 1800 6150 1800
-Wire Wire Line
-	10000 3050 10250 3050
 Wire Wire Line
 	8150 3150 8000 3150
 Wire Wire Line
@@ -2015,4 +1916,10 @@ Wire Wire Line
 	9350 3050 9500 3050
 Wire Wire Line
 	6550 1800 6700 1800
+Wire Wire Line
+	9200 5550 9850 5550
+Wire Wire Line
+	9800 3050 10250 3050
+Wire Wire Line
+	7000 1800 7450 1800
 $EndSCHEMATC
