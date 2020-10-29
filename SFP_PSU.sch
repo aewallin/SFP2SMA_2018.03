@@ -582,9 +582,9 @@ Text Notes 4600 4050 0    60   ~ 0
 Text Notes 4900 1000 0    60   ~ 0
 1273625
 Text Notes 7050 1750 0    60   ~ 0
-2463991 \n1.9V 2mA
+2463991 \n1.9V 2mA, SMD 0805 LED
 Text Notes 1050 1950 0    60   ~ 0
-3pin terminal block 277-1264-ND 
+4pin terminal block 277-1249-ND
 Text Notes 7700 3050 0    60   ~ 0
 Vout= 1.21V(1+R2/R1) + 3uA * R2
 Text GLabel 3600 4300 0    60   Input ~ 0
@@ -637,7 +637,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 3000 5300 2950
 Text Notes 1050 3850 0    60   ~ 0
-D201 and D202 - reverse polarity protection.\ne.g. Farnell 9555986\nMBRA140T3G -  Schottky Rectifier, 40 V, 1 A, Single, DO-214AC,\nor similar
+D201, D202, D206 - reverse polarity protection.\ne.g. Farnell 9555986\nMBRA140T3G -  Schottky Rectifier, 40 V, 1 A, Single, DO-214AC,\nor similar
 $Comp
 L Regulator_Linear:LT1963AxQ-3.3 U203
 U 1 1 5F92F725
