@@ -584,7 +584,7 @@ Text Notes 4900 1000 0    60   ~ 0
 Text Notes 7050 1750 0    60   ~ 0
 2463991 \n1.9V 2mA, SMD 0805 LED
 Text Notes 1050 1950 0    60   ~ 0
-4pin terminal block 277-1249-ND
+4pin 200mil terminal block 277-1249-ND
 Text Notes 7700 3050 0    60   ~ 0
 Vout= 1.21V(1+R2/R1) + 3uA * R2
 Text GLabel 3600 4300 0    60   Input ~ 0

@@ -1624,8 +1624,8 @@ NoConn ~ 8650 3350
 NoConn ~ 8750 3350
 NoConn ~ 6900 5200
 NoConn ~ 6800 5200
-Text Notes 700  900  0    60   ~ 0
-This design is at: https://github.com/aewallin/SFP2SMA_2018.03\nTypical performance: http://www.anderswallin.net/2019/03/sma-to-sfp-frequency-stability/\nnotes: http://www.anderswallin.net/2018/04/500-mhz-sfp-board-v4/\n
+Text Notes 650  1450 0    60   ~ 0
+Copyright Anders E, Wallin 2020.\nThis source describes Open Hardware and is licensed under the CERN-OHL-P v2\n\nYou may redistribute and modify this documentation and make products\nusing it under the terms of the CERN-OHL-P v2 (https:/cern.ch/cern-ohl).\n\nThis design is at: https://github.com/aewallin/SFP2SMA_2018.03\nTypical performance: http://www.anderswallin.net/2019/03/sma-to-sfp-frequency-stability/\nnotes: http://www.anderswallin.net/2018/04/500-mhz-sfp-board-v4/\n
 $Comp
 L 74xx:74HC14 U104
 U 1 1 5F92B3B6
