@@ -932,7 +932,7 @@
 		(descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0805")
 		(property "Reference" "C109"
-			(at -3.5 0 0)
+			(at -4 -0.25 0)
 			(layer "F.SilkS")
 			(uuid "9a47430f-9889-4940-a767-6c2651b28431")
 			(effects
@@ -2084,7 +2084,7 @@
 		(descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0805")
 		(property "Reference" "C203"
-			(at -4 0 180)
+			(at -3.75 0 180)
 			(layer "F.SilkS")
 			(uuid "0d2e4e35-f51c-407e-ada3-cac615402126")
 			(effects
@@ -2276,7 +2276,7 @@
 		(descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0805")
 		(property "Reference" "C204"
-			(at 0 -1.5 270)
+			(at -4 0 270)
 			(layer "F.SilkS")
 			(uuid "6f05ea49-4842-4308-bde3-93c31c4f6ad5")
 			(effects
@@ -2660,7 +2660,7 @@
 		(descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0805")
 		(property "Reference" "C206"
-			(at 4 0 0)
+			(at 3.75 0 0)
 			(layer "F.SilkS")
 			(uuid "7dce6958-67e9-4a72-b3e1-425306a74ac9")
 			(effects
@@ -3236,7 +3236,7 @@
 		(descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0805")
 		(property "Reference" "C209"
-			(at -0.5 1.5 0)
+			(at 3.75 0 0)
 			(layer "F.SilkS")
 			(uuid "4a522b1b-cecd-4dee-9b6f-ebee8035c3a5")
 			(effects
@@ -7488,7 +7488,7 @@
 		(descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
 		(tags "resistor 0805")
 		(property "Reference" "R125"
-			(at -1 1.5 0)
+			(at 0 -1.5 0)
 			(layer "F.SilkS")
 			(uuid "899eb5e5-ced6-4f5b-848e-bea2d17a5dd6")
 			(effects
@@ -8064,7 +8064,7 @@
 		(descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
 		(tags "resistor 0805")
 		(property "Reference" "R203"
-			(at 4 0 0)
+			(at 3.5 0 0)
 			(layer "F.SilkS")
 			(uuid "53a2d661-54a0-4f37-95b2-a57bb7ef7eb1")
 			(effects
@@ -10573,7 +10573,7 @@
 		(descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0805")
 		(property "Reference" "C103"
-			(at 3.5 0 180)
+			(at 3.75 0 180)
 			(layer "F.SilkS")
 			(uuid "b8faceee-a37b-4018-b823-b175c7b2838e")
 			(effects
@@ -10765,7 +10765,7 @@
 		(descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0805")
 		(property "Reference" "C104"
-			(at 0 -1.5 0)
+			(at -4 -0.75 0)
 			(layer "F.SilkS")
 			(uuid "476eab29-5a11-42e5-8061-946c2560fa0e")
 			(effects
@@ -10957,7 +10957,7 @@
 		(descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0805")
 		(property "Reference" "C105"
-			(at 0 -1.5 0)
+			(at -4 -0.25 0)
 			(layer "F.SilkS")
 			(uuid "b66b346c-f84c-46bb-aa31-1bc4a4de1660")
 			(effects
@@ -11149,7 +11149,7 @@
 		(descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0805")
 		(property "Reference" "C106"
-			(at 3.5 0 180)
+			(at 3.75 0 180)
 			(layer "F.SilkS")
 			(uuid "379da077-bfd0-445f-b07a-115d4012fc86")
 			(effects
@@ -13472,7 +13472,7 @@
 		(descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
 		(tags "resistor 0805")
 		(property "Reference" "R139"
-			(at -0.5 1.5 0)
+			(at -0.25 -1.5 0)
 			(layer "F.SilkS")
 			(uuid "b65ad74a-b905-49ec-9f9a-ac722f2c25ab")
 			(effects
@@ -18644,7 +18644,7 @@
 		(descr "TO-263 / D2PAK / DDPAK SMD package, http://www.infineon.com/cms/en/product/packages/PG-TO263/PG-TO263-5-1/")
 		(tags "D2PAK DDPAK TO-263 D2PAK-5 TO-263-5 SOT-426")
 		(property "Reference" "U201"
-			(at 0 -6.65 0)
+			(at -6 -6.65 0)
 			(layer "F.SilkS")
 			(uuid "1154610c-eff9-4019-8d3e-d2c566e8f36b")
 			(effects
@@ -19119,7 +19119,7 @@
 		(descr "TO-263 / D2PAK / DDPAK SMD package, http://www.infineon.com/cms/en/product/packages/PG-TO263/PG-TO263-5-1/")
 		(tags "D2PAK DDPAK TO-263 D2PAK-5 TO-263-5 SOT-426")
 		(property "Reference" "U202"
-			(at 0 -6.65 0)
+			(at -6.25 -5.25 0)
 			(layer "F.SilkS")
 			(uuid "45768e1c-2eb2-4845-9391-69a1805870c4")
 			(effects
@@ -19594,7 +19594,7 @@
 		(descr "TO-263 / D2PAK / DDPAK SMD package, http://www.infineon.com/cms/en/product/packages/PG-TO263/PG-TO263-5-1/")
 		(tags "D2PAK DDPAK TO-263 D2PAK-5 TO-263-5 SOT-426")
 		(property "Reference" "U203"
-			(at 0 -6.65 0)
+			(at -6.25 -5.75 0)
 			(layer "F.SilkS")
 			(uuid "ec82223b-637d-4ab4-93d5-02ecf5388cf0")
 			(effects
